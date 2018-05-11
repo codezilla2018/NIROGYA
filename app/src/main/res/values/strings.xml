@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="count_steps">steps</string>
+    <string name="count_miles">miles</string>
+    <string name="count_steps_per_minute">steps / minute</string>
+    <string name="count_miles_per_hour">miles / hour</string>
+    <string name="count_calories">calories burned</string>
 </resources>

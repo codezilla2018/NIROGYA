@@ -14,6 +14,11 @@ import codezilla.foss.nirogya.R;
 import codezilla.foss.nirogya.StepDetector;
 import codezilla.foss.nirogya.interfaces.StepListener;
 
+/**
+ * we are using Accelerometer sensor because most of devices have this sensor.
+ *
+ */
+
 public class PedometerActivity extends AppCompatActivity implements SensorEventListener, StepListener {
     private TextView TvSteps;
     private StepDetector simpleStepDetector;
@@ -39,13 +44,10 @@ public class PedometerActivity extends AppCompatActivity implements SensorEventL
         BtnStop = findViewById(R.id.btn_stop);
 
         BtnStart.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View arg0) {
-
                 numSteps = 0;
                 sensorManager.registerListener(PedometerActivity.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
-
             }
         });
 
@@ -79,6 +81,7 @@ public class PedometerActivity extends AppCompatActivity implements SensorEventL
     public void step(long timeNs) {
         numSteps++;
         TvSteps.setText(TEXT_NUM_STEPS + numSteps);
+
     }
 
 }
