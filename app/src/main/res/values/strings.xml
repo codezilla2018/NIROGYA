@@ -1,8 +1,196 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="count_steps">steps</string>
-    <string name="count_miles">miles</string>
-    <string name="count_steps_per_minute">steps / minute</string>
-    <string name="count_miles_per_hour">miles / hour</string>
-    <string name="count_calories">calories burned</string>
+    <string name="app_name">NIROGYA</string>
+
+    <!--activity_splash_screen-->
+    <string name="app_heading">NIROGYA</string>
+
+    <!--activity_select_gender.xml-->
+    <string name="activity_select_gender_main_caption_text">Select Gender</string>
+    <string name="activity_select_gender_sub_heading_text">Calories &amp; stride length calcaultion needs it.</string>
+    <string name="activity_select_gender_female_button_text">Female</string>
+    <string name="activity_select_gender_male_button_text">Male</string>
+    <string name="activity_select_gender_next_button_text">NEXT</string>
+
+    <!--ProfileActivity-->
+    <string name="profile_activity_title_text">Live with NIROGYA</string>
+    <string name="profile_activity_message_text">Please select height and weight</string>
+    <string name="profile_activity_ok_button_text">YES</string>
+
+
+    <!--activity_profile.xml-->
+    <string name="header_name">My Profile</string>
+    <string name="description_name">To ensure the accuracy, please input your accurate information. We never share them with third parties.</string>
+    <string name="height_caption">Height</string>
+    <string name="weight_caption">Weight</string>
+    <string name="height_default_value">170 cm</string>
+    <string name="weight_defaut_value">70.0 kg</string>
+    <string name="next_button_display_text">NEXT</string>
+
+    <!--activity_achievement.xml-->
+    <string name="activity_achievement_selected_medel_caption_default_text">10000</string>
+    <string name="activity_achievement_selected_medel_caption_steps_text">Steps</string>
+    <string name="activity_achievement_bronze_medal_text">10000 Steps</string>
+    <string name="activity_achievement_silver_medal_text">20000 Steps</string>
+    <string name="activity_achievement_gold_medal_text">30000 Steps</string>
+
+
+    <!--InstructionsActivity-->
+    <string name="instructions_activity_header_1">How to use?</string>
+    <string name="instructions_activity_header_2">Steps Counting?</string>
+    <string name="instructions_activity_header_3">Counting when shaking phone?</string>
+    <string name="instructions_activity_header_4">Counting when driving?</string>
+    <string name="instructions_activity_header_5">Accuracy</string>
+    <string name="instructions_activity_header_6">Placement Suggestion</string>
+    <string name="instructions_activity_header_7">Battery Saving</string>
+    <string name="instructions_activity_header_8">Privacy</string>
+    <string name="instructions_activity_header_9">Calories &amp; Distance</string>
+    <string name="instructions_activity_header_10">Step Goal</string>
+    <string name="instructions_activity_header_1_child_data">Click PAUSE button on home page to stop counting and reduce power consumption; click RESUME button to start counting again. Please keep your phone with you.</string>
+    <string name="instructions_activity_header_2_child_data">Due to the limitation of some devices or security apps, the pedometer may be forcibly stopped.</string>
+    <string name="instructions_activity_header_3_child_data">If you shake your phone, It might be counted as steps because of the built-in sensor.It\'s not a bug. We will keep working hard for a better user experience</string>
+    <string name="instructions_activity_header_4_child_data">In certain driving circumstances, It may count some steps due to system restrictions, which depends on the conditions you are driving in nad where you place your phone.</string>
+    <string name="instructions_activity_header_5_child_data">We use the built-in sensor in your phone to count your steps, so the accuracy is based on how good the sensor is.</string>
+    <string name="instructions_activity_header_6_child_data">We suggest you put it: in your hand, pocket,bag,armband or places close to your body. Don\'t put it: in places away from your body,places that shake too fast or places that have little movement.</string>
+    <string name="instructions_activity_header_7_child_data">We read your steps from the built-in sensor. No GPS tracking. You can pause the app to save the battery when you\'re not walking.</string>
+    <string name="instructions_activity_header_8_child_data">100% private. No personal data collectrion. Np data sharing with third parties.</string>
+    <string name="instructions_activity_header_9_child_data">We use your height and weight to calculate your burned calories &amp; distance, so please ensure you input accurate information in the settings.</string>
+    <string name="instructions_activity_header_10_child_data">We help you to set your goal according to your achieved steps to keep you motivated.</string>
+
+    <!--privacy_policy_activity-->
+    <string name="privacy_policy_activity_html_file">![CDATA[<html>
+<body>
+<h2>Privacy Policy</h2>
+<p>Kasun Chinthaka built the NIROGYA app as a free app. This SERVICE is provided by Kasun Chinthaka at no cost and is intendedfor use as is.</p>
+<p>This page is used to inform website visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.</p>
+<p>If you choose to use my Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that I collect are used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.</p>
+<p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions which is accessible at NIROGYA, unless otherwise defined in this Privacy Policy.</p>
+<p><strong>Information Collection and Use</strong></p>
+<p>For a better experience while using our Service, I may require you to provide us with certain personally identifiable information, including but not limited to add whatever else I collect here.The information that I request will be retained by us and used as described in this privacy policy.</p>
+<p>The app does use third party services that may collect information used to identify you.</p>
+<p><strong>Log Data</strong></p>
+<p>I want to inform you that whenever you use my Service, in case of an error in the app I collect data and information  on your phone called Log Data. This Log Data may include information such as your devices’s Internet Protocol (“IP”) address, device name, operating system version, configuration of the app when utilising my Service, the time and date of your use of the Service, and other statistics.</p>
+<p><strong>Cookies</strong></p>
+<p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier.These are sent to your browser from the website that you visit and are stored on your devices’s internal memory.</p>
+<p>This Services does not uses these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collection information and to improve their services. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.</p>
+<p><strong>Service Providers</strong></p>
+<p>I may employ third-party companies and individuals due to the following reasons:</p><ul><li>To facilitate our Service;</li><li>To provide the Service on our behalf;</li>
+<li>To perform Service-related services; or</li>
+    <li>To assist us in analyzing how our Service is used.</li></ul>>
+<p>I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p>
+<p><strong>Security</strong></p>
+<p>I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and [I|we] cannot guarantee its absolute security.</p>
+<p><strong>Links to Other Sites</strong></p>
+<p>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p><p><strong>Children’s Privacy</strong></p>
+<p>This Services do not address anyone under the age of 13. I do not knowingly collect personal identifiable information from children under 13. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions.</p>
+<p><strong>Changes to This Privacy Policy</strong></p>
+<p>I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p>
+<p><strong>Contact Us</strong></p>
+<p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me.</p>
+<p>This Privacy Policy page was created at <a href="https://privacypolicytemplate.net"></a>.</p>
+</body>
+</html>"]]</string>
+
+    <!--steps_fragment-->
+    <string name="steps_fragment_reset_data_dialog_message">Are you sure to reset all steps and related information</string>
+    <string name="steps_fragment_reset_data_dialog_ok_button">yes</string>
+    <string name="steps_fragment_reset_data_dialog_cancel_button">No</string>
+
+    <!--tips_fragment-->
+    <string name="tips_fragment_progress_dialog_title">NIROGAA</string>
+    <string name="tips_fragment_progress_dialog_message">Loading...Health Tips</string>
+    <string name="tips_fragment_check_internet_connection">Please check your internet connection</string>
+    <string name="tips_fragment_alert_dialog_title">NIROGYA HEALTH TIPS</string>
+    <string name="tips_fragment_alert_dialog_message">Next health tip will be available within </string>
+    <string name="tips_fragment_alert_dialog_ok_button_text">OK</string>
+    
+    <!--activity_profile_height_selector.xml-->
+    <string name="activity_profile_height_selector_topic">Height</string>
+    <string name="activity_profile_height_selector_sub_topic">Distance &amp; speed calculation needs it</string>
+    <string name="activity_profile_height_selector_unit">cm</string>
+    <string name="activity_profile_height_selector_ok_button">OK</string>
+    <string name="activity_profile_height_selector_cancel_button">CANCEL</string>
+
+    <!--activity_profile_weight_selector.xml-->
+    <string name="activity_profile_weight_selector_topic">Weight</string>
+    <string name="activity_profile_weight_selector_sub_topic">Distance &amp; speed calculation needs it</string>
+    <string name="activity_profile_weight_selector_unit">kg</string>
+    <string name="activity_profile_weight_selector_ok_button">OK</string>
+    <string name="activity_profile_weight_selector_cancel_button">CANCEL</string>
+
+    <!--fragment_settings.xml-->
+    <string name="fragment_settings_heading_1">Step Goal</string>
+    <string name="fragment_settings_heading_2">Sensitivity</string>
+    <string name="fragment_settings_heading_3">Weight</string>
+    <string name="fragment_settings_heading_4">Gender</string>
+    <string name="fragment_settings_heading_5">Height</string>
+    <string name="fragment_settings_heading_6">Language options</string>
+    <string name="fragment_settings_heading_7">Instructions</string>
+    <string name="fragment_settings_heading_8">Privacy Policy</string>
+
+    <!--fragment_settings_gender_selector.xml-->
+    <string name="fragment_settings_gender_selector_head_text">Gender</string>
+    <string name="fragment_settings_gender_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
+    <string name="fragment_settings_gender_selector_female_text">female</string>
+    <string name="fragment_settings_gender_selector_male_text">male</string>
+    <string name="fragment_settings_gender_selector_ok_button_text">OK</string>
+    <string name="fragment_settings_gender_selector_cancel_button_text">CANCEL</string>
+
+
+
+    <!--fragment_settings_height_selector.xml-->
+    <string name="fragment_settings_height_selector_head_text">Height</string>
+    <string name="fragment_settings_height_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
+    <string name="fragment_settings_height_selector_unit">cm</string>
+    <string name="fragment_settings_height_selector_ok_button_text">OK</string>
+    <string name="fragment_settings_height_selector_cancel_button_text">CANCEL</string>
+
+    <!--fragment_settings_language_selector.xml-->
+    <string name="fragment_settings_language_selector_head_text">Language</string>
+    <string name="fragment_settings_language_selector_message">You have NIROGA version 1.0.0 and It is only compatible with ENGLISH.We will try to give more language support with upcoming versions.</string>
+    <string name="fragment_settings_language_selector_cancel_button">CANCEL</string>
+    <string name="fragment_settings_language_selector_ok_button">OK</string>
+
+
+    <!--fragment_settings_sensitivity_selector.xml-->
+    <string name="fragment_settings_sensitivity_selector_head_text">Sensitivity</string>
+    <string name="fragment_settings_sensitivity_selector_message">Distance &amp; speed calculation needs it</string>
+    <string name="fragment_settings_sensitivity_selector_cancel_button">CANCEL</string>
+    <string name="fragment_settings_sensitivity_selector_ok_button">OK</string>
+
+    <!--fragment_settings_step_goal_selector.xml-->
+    <string name="fragment_settings_step_goal_selector_head_text">Step Goal</string>
+    <string name="fragment_settings_step_goal_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
+    <string name="fragment_settings_step_goal_selector_unit">step goal</string>
+    <string name="fragment_settings_step_goal_selector_radio_button_1">6000</string>
+    <string name="fragment_settings_step_goal_selector_radio_button_2">12000</string>
+    <string name="fragment_settings_step_goal_selector_radio_button_3">24000</string>
+    <string name="fragment_settings_step_goal_selector_ok_button_text">OK</string>
+    <string name="fragment_settings_step_goal_selector_cancel_button_text">CANCEL</string>
+
+
+    <!--fragment_settings_weight_selector.xml-->
+    <string name="fragment_settings_weight_selector_head_text">Weight</string>
+    <string name="fragment_settings_weight_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
+    <string name="fragment_settings_weight_selector_unit">kg</string>
+    <string name="fragment_settings_weight_selector_ok_button_text">OK</string>
+    <string name="fragment_settings_weight_selector_cancel_button_text">CANCEL</string>
+
+    <!--fragment_steps-->
+    <string name="fragment_steps_start_button_text">Start Pedometer</string>
+    <string name="fragment_steps_puase_button_text">PAUSE</string>
+    <string name="fragment_steps_count_steps">Steps</string>
+    <string name="fragment_steps_count_distance">Walking Distance</string>
+    <string name="fragment_steps_count_steps_per_minute">steps / minute</string>
+    <string name="fragment_steps_count_miles_per_hour">miles / hour</string>
+    <string name="fragment_steps_count_calories">Calories burnt</string>
+    <string name="fragment_steps_step_goal">Step Goal</string>
+
+
+
+
+    <string name="item_1">STEPS</string>
+    <string name="item_2">TIPS</string>
+    <string name="item_3">MORE</string>
+
+
 </resources>

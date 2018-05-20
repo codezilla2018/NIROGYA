@@ -9,6 +9,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
     }
     buildTypes {
         release {
@@ -17,6 +20,9 @@ android {
         }
     }
 }
+android {
+    useLibrary 'org.apache.http.legacy'
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -24,6 +30,10 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation 'junit:junit:4.12'
     compile 'com.android.support:cardview-v7:27.1.+'
+    compile 'com.google.code.gson:gson:2.2.+'
+    compile 'com.shawnlin:number-picker:2.4.6'
+    compile 'com.android.support:design:27.1.1'
+    compile 'com.github.uin3566:AllAngleExpandableButton:v1.2.0'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
