@@ -29,6 +29,7 @@ import codezilla.foss.nirogya.Constant;
 import codezilla.foss.nirogya.R;
 import codezilla.foss.nirogya.StepDetector;
 import codezilla.foss.nirogya.activities.AchievementActivity;
+import codezilla.foss.nirogya.activities.InstructionsActivity;
 import codezilla.foss.nirogya.database.NirogyaDataSource;
 import codezilla.foss.nirogya.interfaces.StepListener;
 
@@ -40,13 +41,15 @@ import static codezilla.foss.nirogya.BurntCalories.findBurntCalories;
  */
 
 public class StepsFragment extends Fragment implements SensorEventListener, StepListener {
-    private TextView TvSteps, calories_burnt, miles, walking_time;
+    private TextView countSteps;
+    private TextView calories_burnt;
+    private TextView miles;
+    private TextView stepGoal;
     private StepDetector simpleStepDetector;
     private SensorManager sensorManager;
     private Sensor accel;
-    private static final String TEXT_NUM_STEPS = "Number of Steps: ";
     private static int numSteps;
-    private Button BtnStart, BtnStop;
+    private Button btnStart, btnStop;
     private static NumberFormat formatter = new DecimalFormat("#0.0000");
     private View fragment_steps;
     private NirogyaDataSource nirogyaDataSource;
@@ -56,8 +59,6 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
     private String defaultTableRowIndexValue = "1";
     private String pedometerTableStatusFieldExecutionValue = "start";
     private String pedometerTableStatusFieldPauseValue = "stop";
-    private String displayCaloryUnit = "cal";
-    private String displayKilometerUnit = "km";
     private String defaultStepGoal = "6000";
     private String defaultSensitivity = "10";
     private String initialCountValue = "0";
@@ -95,44 +96,50 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
         accel = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         simpleStepDetector = new StepDetector();
         simpleStepDetector.registerListener(this);
-        TvSteps = fragment_steps.findViewById(R.id.tv_steps);
-        BtnStart = fragment_steps.findViewById(R.id.btn_start);
-        BtnStop = fragment_steps.findViewById(R.id.btn_stop);
+        countSteps = fragment_steps.findViewById(R.id.human_steps);
+        stepGoal = fragment_steps.findViewById(R.id.step_goal);
+        btnStart = fragment_steps.findViewById(R.id.btn_start);
+        btnStop = fragment_steps.findViewById(R.id.btn_stop);
         calories_burnt = fragment_steps.findViewById(R.id.calories_burnt);
         miles = fragment_steps.findViewById(R.id.miles);
-        walking_time = fragment_steps.findViewById(R.id.step_goal);
+        stepGoal = fragment_steps.findViewById(R.id.step_goal);
+        stepGoal.setText(retrivedData[4]);
 
         if (retrivedData[0] != null) {
             if (retrivedData[0].equals(pedometerTableStatusFieldExecutionValue)) {
-                TvSteps.setText(TEXT_NUM_STEPS + retrivedData[1]);
-                calories_burnt.setText(formatter.format(Double.parseDouble(retrivedData[3])) + " " + displayCaloryUnit);
-                miles.setText(formatter.format(Double.parseDouble(retrivedData[2])) + " " + displayKilometerUnit);
+                countSteps.setText(retrivedData[1]);
+                calories_burnt.setText(formatter.format(Double.parseDouble(retrivedData[3])));
+                miles.setText(formatter.format(Double.parseDouble(retrivedData[2])));
                 sensorManager.registerListener(StepsFragment.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
-                BtnStart.setVisibility(View.GONE);
-                BtnStop.setVisibility(View.VISIBLE);
+                btnStart.setVisibility(View.GONE);
+                btnStop.setVisibility(View.VISIBLE);
+            } else {
+                countSteps.setText(retrivedData[1]);
+                calories_burnt.setText(formatter.format(Double.parseDouble(retrivedData[3])));
+                miles.setText(formatter.format(Double.parseDouble(retrivedData[2])));
             }
         }
 
 
-        BtnStart.setOnClickListener(new View.OnClickListener() {
+        btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
 //                numSteps = 0;
                 sensorManager.registerListener(StepsFragment.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
-                BtnStart.setVisibility(View.GONE);
-                BtnStop.setVisibility(View.VISIBLE);
+                btnStart.setVisibility(View.GONE);
+                btnStop.setVisibility(View.VISIBLE);
             }
         });
 
 
-        BtnStop.setOnClickListener(new View.OnClickListener() {
+        btnStop.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
                 nirogyaDataSource.updateStatusOfPedomter(defaultTableRowIndexValue, pedometerTableStatusFieldPauseValue);
                 sensorManager.unregisterListener(StepsFragment.this);
-                BtnStop.setVisibility(View.GONE);
-                BtnStart.setVisibility(View.VISIBLE);
+                btnStop.setVisibility(View.GONE);
+                btnStart.setVisibility(View.VISIBLE);
 
             }
         });
@@ -157,11 +164,11 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
     @Override
     public void step(long timeNs) {
         numSteps++;
-        TvSteps.setText(TEXT_NUM_STEPS + numSteps);
+        countSteps.setText(String.valueOf(numSteps));
         double[] returnVal = findBurntCalories(numSteps, height, weight);
         nirogyaDataSource.updatePedomter(defaultTableRowIndexValue, pedometerTableStatusFieldExecutionValue, String.valueOf(numSteps), Double.toString(returnVal[1]), Double.toString(returnVal[0]));
-        calories_burnt.setText(formatter.format(returnVal[0]) + " " + displayCaloryUnit);
-        miles.setText(formatter.format(returnVal[1]) + " " + displayKilometerUnit);
+        calories_burnt.setText(formatter.format(returnVal[0]));
+        miles.setText(formatter.format(returnVal[1]));
 
     }
 
@@ -202,13 +209,13 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
                                     @Override
                                     public void onClick(DialogInterface arg0, int arg1) {
                                         nirogyaDataSource.resetPedomter(defaultTableRowIndexValue, null, defaultStepGoal, null, null, null, null, defaultSensitivity);
-                                        BtnStop.setVisibility(View.GONE);
-                                        BtnStart.setVisibility(View.VISIBLE);
+                                        btnStop.setVisibility(View.GONE);
+                                        btnStart.setVisibility(View.VISIBLE);
                                         sensorManager.unregisterListener(StepsFragment.this);
                                         numSteps = 0;
-                                        TvSteps.setText(TEXT_NUM_STEPS + initialCountValue);
-                                        calories_burnt.setText(initialCountValue + " " + displayCaloryUnit);
-                                        miles.setText(initialCountValue+ " " + displayKilometerUnit);
+                                        countSteps.setText(initialCountValue);
+                                        calories_burnt.setText(initialCountValue);
+                                        miles.setText(initialCountValue);
 
                                     }
                                 });
@@ -222,6 +229,8 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
                         alertDialog.show();
                         break;
                     case 3:
+                        Intent intent = new Intent(getActivity(), InstructionsActivity.class);
+                        startActivity(intent);
                         break;
                     default: {
                     }

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/activity_select_gender_background_color"
+    android:background="@drawable/activity_select_gender_background"
     android:orientation="vertical"
     android:padding="10dp"
     tools:context="codezilla.foss.nirogya.activities.SelectGenderActivity">
@@ -53,10 +53,11 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <Button
+                    <ImageButton
                         android:id="@+id/gender_female"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
+                        android:src="@drawable/activity_select_gender_female_icon"
                         android:background="@drawable/default_gender_buttons_shape"
                         android:padding="15dp" />
 
@@ -86,10 +87,11 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <Button
+                    <ImageButton
                         android:id="@+id/gender_male"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
+                        android:src="@drawable/activity_select_gender_male_icon"
                         android:background="@drawable/default_gender_buttons_shape"
                         android:padding="15dp" />
 

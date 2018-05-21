@@ -57,7 +57,7 @@
     <string name="instructions_activity_header_10_child_data">We help you to set your goal according to your achieved steps to keep you motivated.</string>
 
     <!--privacy_policy_activity-->
-    <string name="privacy_policy_activity_html_file">![CDATA[<html>
+    <string name="privacy_policy_activity_html_file"><html>
 <body>
 <h2>Privacy Policy</h2>
 <p>Kasun Chinthaka built the NIROGYA app as a free app. This SERVICE is provided by Kasun Chinthaka at no cost and is intendedfor use as is.</p>
@@ -88,7 +88,7 @@
 <p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me.</p>
 <p>This Privacy Policy page was created at <a href="https://privacypolicytemplate.net"></a>.</p>
 </body>
-</html>"]]</string>
+</html></string>
 
     <!--steps_fragment-->
     <string name="steps_fragment_reset_data_dialog_message">Are you sure to reset all steps and related information</string>
@@ -96,13 +96,13 @@
     <string name="steps_fragment_reset_data_dialog_cancel_button">No</string>
 
     <!--tips_fragment-->
-    <string name="tips_fragment_progress_dialog_title">NIROGAA</string>
-    <string name="tips_fragment_progress_dialog_message">Loading...Health Tips</string>
+    <string name="tips_fragment_progress_dialog_title">Loading</string>
+    <string name="tips_fragment_progress_dialog_message">NIROGA...Health Tips</string>
     <string name="tips_fragment_check_internet_connection">Please check your internet connection</string>
     <string name="tips_fragment_alert_dialog_title">NIROGYA HEALTH TIPS</string>
     <string name="tips_fragment_alert_dialog_message">Next health tip will be available within </string>
     <string name="tips_fragment_alert_dialog_ok_button_text">OK</string>
-    
+
     <!--activity_profile_height_selector.xml-->
     <string name="activity_profile_height_selector_topic">Height</string>
     <string name="activity_profile_height_selector_sub_topic">Distance &amp; speed calculation needs it</string>
@@ -134,7 +134,6 @@
     <string name="fragment_settings_gender_selector_male_text">male</string>
     <string name="fragment_settings_gender_selector_ok_button_text">OK</string>
     <string name="fragment_settings_gender_selector_cancel_button_text">CANCEL</string>
-
 
 
     <!--fragment_settings_height_selector.xml-->
@@ -175,17 +174,22 @@
     <string name="fragment_settings_weight_selector_ok_button_text">OK</string>
     <string name="fragment_settings_weight_selector_cancel_button_text">CANCEL</string>
 
-    <!--fragment_steps-->
+    fragment_steps_caloryteps-->
     <string name="fragment_steps_start_button_text">Start Pedometer</string>
     <string name="fragment_steps_puase_button_text">PAUSE</string>
-    <string name="fragment_steps_count_steps">Steps</string>
-    <string name="fragment_steps_count_distance">Walking Distance</string>
-    <string name="fragment_steps_count_steps_per_minute">steps / minute</string>
-    <string name="fragment_steps_count_miles_per_hour">miles / hour</string>
-    <string name="fragment_steps_count_calories">Calories burnt</string>
+    <string name="fragment_steps_count_steps">0</string>
+    <string name="fragment_steps_count_distance">0.0000</string>
+    <string name="fragment_steps_count_calories">0.0000</string>
     <string name="fragment_steps_step_goal">Step Goal</string>
+    <string name="fragment_steps_step_unit">Steps</string>
+    <string name="fragment_steps_distance_unit">Kms</string>
+    <string name="fragment_steps_calory_unit">Cal</string>
+    <string name="fragment_steps_step_goal_unit">Step goal</string>
 
-
+    <!--achievement_activity-->
+    <string name="achievement_activity_target_point_1">10000</string>
+    <string name="achievement_activity_target_point_2">20000</string>
+    <string name="achievement_activity_target_point_3">30000</string>
 
 
     <string name="item_1">STEPS</string>

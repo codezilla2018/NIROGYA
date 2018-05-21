@@ -11,13 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fragment_settings_height_selector_head_text"
-        android:textColor="@color/fragment_settings_height_selector_topic_color" />
+        android:textColor="@color/fragment_settings_height_selector_topic_color"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/fragment_settings_height_selector_sub_head_text" />
+        android:text="@string/fragment_settings_height_selector_sub_head_text"
+        android:textColor="@color/primaryColor"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +39,9 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:layout_marginLeft="20dp"
-            android:text="@string/fragment_settings_height_selector_unit" />
+            android:text="@string/fragment_settings_height_selector_unit"
+            android:textColor="@color/primaryColor"
+            />
 
     </LinearLayout>
 
@@ -51,13 +56,17 @@
             android:id="@+id/fs_height_cancel_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fragment_settings_height_selector_cancel_button_text" />
+            android:text="@string/fragment_settings_height_selector_cancel_button_text"
+            android:textColor="@color/primaryDarkColor"
+            android:background="@android:color/transparent"/>
 
         <Button
             android:id="@+id/fs_height_ok_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fragment_settings_height_selector_ok_button_text" />
+            android:text="@string/fragment_settings_height_selector_ok_button_text"
+            android:textColor="@color/primaryDarkColor"
+            android:background="@android:color/transparent"/>
     </LinearLayout>
 
 </LinearLayout>

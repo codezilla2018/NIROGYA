@@ -11,21 +11,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fragment_settings_language_selector_head_text"
-        android:textColor="@color/fragment_settings_language_selector_topic_color" />
+        android:textColor="@color/fragment_settings_language_selector_topic_color"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_marginTop="10dp"
+        android:gravity="center"
         android:orientation="horizontal">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:text="@string/fragment_settings_language_selector_message"
+            android:textAlignment="center"
+            android:textColor="@color/primaryColor"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -41,13 +44,17 @@
             android:id="@+id/fs_language_cancel_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fragment_settings_language_selector_cancel_button" />
+            android:background="@android:color/transparent"
+            android:text="@string/fragment_settings_language_selector_cancel_button"
+            android:textColor="@color/primaryDarkColor" />
 
         <Button
             android:id="@+id/fs_language_ok_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fragment_settings_language_selector_ok_button" />
+            android:background="@android:color/transparent"
+            android:text="@string/fragment_settings_language_selector_ok_button"
+            android:textColor="@color/primaryDarkColor" />
     </LinearLayout>
 
 </LinearLayout>

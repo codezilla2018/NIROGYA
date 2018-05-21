@@ -11,13 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fragment_settings_step_goal_selector_head_text"
-        android:textColor="@color/fragment_settings_step_goal_selector_topic_color" />
+        android:textColor="@color/fragment_settings_step_goal_selector_topic_color"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/fragment_settings_step_goal_selector_sub_head_text" />
+        android:text="@string/fragment_settings_step_goal_selector_sub_head_text"
+        android:textColor="@color/primaryColor" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,20 +31,21 @@
         <RadioGroup
             android:id="@+id/radio_step_goal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/minimum_goal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fragment_settings_step_goal_selector_radio_button_1"
-                android:checked="true" />
+                android:checked="true"
+                android:text="@string/fragment_settings_step_goal_selector_radio_button_1" />
 
             <RadioButton
                 android:id="@+id/average_goal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/fragment_settings_step_goal_selector_radio_button_2" />
+
             <RadioButton
                 android:id="@+id/top_goal"
                 android:layout_width="wrap_content"
@@ -53,9 +57,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
             android:layout_marginLeft="20dp"
-            android:text="step goal" />
+            android:text="step goal"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -70,13 +75,17 @@
             android:id="@+id/fs_step_goal_cancel_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fragment_settings_step_goal_selector_cancel_button_text" />
+            android:background="@android:color/transparent"
+            android:text="@string/fragment_settings_step_goal_selector_cancel_button_text"
+            android:textColor="@color/primaryDarkColor" />
 
         <Button
             android:id="@+id/fs_step_goal_ok_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fragment_settings_step_goal_selector_ok_button_text" />
+            android:background="@android:color/transparent"
+            android:text="@string/fragment_settings_step_goal_selector_ok_button_text"
+            android:textColor="@color/primaryDarkColor" />
     </LinearLayout>
 
 </LinearLayout>

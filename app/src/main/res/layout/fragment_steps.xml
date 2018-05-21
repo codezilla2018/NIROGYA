@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fragment_steps_background"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp">
@@ -17,53 +18,53 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:gravity="center"
-            android:weightSum="4"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="4">
 
             <Button
                 android:id="@+id/btn_start"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/primaryColor"
                 android:text="@string/fragment_steps_start_button_text"
-                android:background="#1a237e"
-                android:textColor="#ffffff"/>
+                android:textColor="@color/primaryTextColor" />
 
             <Button
                 android:id="@+id/btn_stop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center"
-                android:visibility="gone"
+                android:layout_weight="1"
+                android:background="@color/primaryColor"
                 android:text="@string/fragment_steps_puase_button_text"
-                android:background="#1a237e"
-                android:textColor="#ffffff"/>
+                android:textColor="@color/primaryTextColor"
+                android:visibility="gone" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:gravity="center"
-                android:layout_weight="3">
+                android:layout_weight="3"
+                android:gravity="center">
 
-            <com.fangxu.allangleexpandablebutton.AllAngleExpandableButton
-                android:id="@+id/button_expandable_90_90"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                app:aebAnimDurationMillis="175"
-                app:aebBlurBackground="true"
-                app:aebButtonElevation="4dp"
-                app:aebButtonGapDp="25dp"
-                app:aebEndAngleDegree="-90"
-                app:aebIsSelectionMode="false"
-                app:aebMainButtonRotateAnimDurationMillis="300"
-                app:aebMainButtonRotateDegree="-135"
-                app:aebMainButtonSizeDp="45dp"
-                app:aebRippleEffect="true"
-                app:aebStartAngleDegree="-90"
-                app:aebSubButtonSizeDp="45dp" />
+                <com.fangxu.allangleexpandablebutton.AllAngleExpandableButton
+                    android:id="@+id/button_expandable_90_90"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:aebAnimDurationMillis="175"
+                    app:aebBlurBackground="true"
+                    app:aebButtonElevation="4dp"
+                    app:aebButtonGapDp="25dp"
+                    app:aebEndAngleDegree="-90"
+                    app:aebIsSelectionMode="false"
+                    app:aebMainButtonRotateAnimDurationMillis="300"
+                    app:aebMainButtonRotateDegree="-135"
+                    app:aebMainButtonSizeDp="45dp"
+                    app:aebRippleEffect="true"
+                    app:aebStartAngleDegree="-90"
+                    app:aebSubButtonSizeDp="45dp" />
 
             </LinearLayout>
 
@@ -84,15 +85,36 @@
                 android:layout_weight="1"
                 card_view:cardCornerRadius="4dp">
 
-                <TextView
-                    android:id="@+id/tv_steps"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/fragment_steps_cardview_background"
                     android:gravity="center"
-                    android:text="@string/fragment_steps_count_steps"
-                    android:textColor="#ffffff"
-                    android:textSize="20dp"
-                    android:background="#534bae"/>
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fragment_steps_steps" />
+
+                    <TextView
+                        android:id="@+id/human_steps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/fragment_steps_count_steps"
+                        android:textColor="@color/fragment_steps_text_color"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_steps_step_unit"
+                        android:textColor="@color/fragment_steps_text_color"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -104,15 +126,35 @@
                 android:layout_weight="1"
                 card_view:cardCornerRadius="4dp">
 
-                <TextView
-                    android:id="@+id/miles"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/fragment_steps_cardview_background"
                     android:gravity="center"
-                    android:text="@string/fragment_steps_count_distance"
-                    android:textColor="#ffffff"
-                    android:textSize="20dp"
-                    android:background="#534bae"/>
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fragment_steps_distance" />
+
+                    <TextView
+                        android:id="@+id/miles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/fragment_steps_count_distance"
+                        android:textColor="@color/fragment_steps_text_color"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_steps_distance_unit"
+                        android:textColor="@color/fragment_steps_text_color"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
         </LinearLayout>
@@ -132,15 +174,35 @@
                 android:layout_weight="1"
                 card_view:cardCornerRadius="4dp">
 
-                <TextView
-                    android:id="@+id/calories_burnt"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/fragment_steps_cardview_background"
                     android:gravity="center"
-                    android:textColor="#ffffff"
-                    android:text="@string/fragment_steps_count_calories"
-                    android:textSize="20dp"
-                    android:background="#534bae"/>
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fragment_steps_calory" />
+
+                    <TextView
+                        android:id="@+id/calories_burnt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/fragment_steps_count_calories"
+                        android:textColor="@color/fragment_steps_text_color"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_steps_calory_unit"
+                        android:textColor="@color/fragment_steps_text_color"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
@@ -152,15 +214,35 @@
                 android:layout_weight="1"
                 card_view:cardCornerRadius="4dp">
 
-                <TextView
-                    android:id="@+id/step_goal"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@color/fragment_steps_cardview_background"
                     android:gravity="center"
-                    android:text="@string/fragment_steps_step_goal"
-                    android:textColor="#ffffff"
-                    android:textSize="20dp"
-                    android:background="#534bae"/>
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fragment_steps_step_goal" />
+
+                    <TextView
+                        android:id="@+id/step_goal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/fragment_steps_step_goal"
+                        android:textColor="@color/fragment_steps_text_color"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_steps_step_goal_unit"
+                        android:textColor="@color/fragment_steps_text_color"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
 
             </android.support.v7.widget.CardView>
         </LinearLayout>

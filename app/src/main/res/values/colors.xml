@@ -3,8 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="status_bar_color">#001064</color>
+    <color name="status_bar_color">#140078</color>
 
+    <color name="primaryColor">#512da8</color>
+    <color name="primaryLightColor">#8559da</color>
+    <color name="primaryDarkColor">#140078</color>
+    <color name="primaryTextColor">#ffffff</color>
 
 
     <color name="white_trans">#99FFFFFF</color>
@@ -18,21 +22,20 @@
     <color name="select_gender_activity_unselected_button_text_color">#504A4B</color>
 
     <!--activity_select_gender.xml-->
-    <color name="activity_select_gender_background_color">#1a237e</color>
     <color name="activity_select_gender_main_caption_color">#54C571</color>
     <color name="activity_select_gender_sub_heading_color">#ffffff</color>
     <color name="activity_select_gender_next_button_text_color">#ffffff</color>
 
 
     <!--activity_profile.xml-->
-    <color name="background_color">#1a237e</color>
-    <color name="header_color">#54C571</color>
-    <color name="decription_name_text_color">#ffffff</color>
-    <color name="height_caption_text_color">#ffffff</color>
-    <color name="weight_caption_text_color">#ffffff</color>
-    <color name="height_value_text_color">#ffffff</color>
-    <color name="weight_value_text_color">#ffffff</color>
-    <color name="next_button_text_color">#ffffff</color>
+    <color name="activity_profile_background_color">#1a237e</color>
+    <color name="activity_profile_header_color">#54C571</color>
+    <color name="activity_profile_decription_name_text_color">#ffffff</color>
+    <color name="activity_profile_height_caption_text_color">#ffffff</color>
+    <color name="activity_profile_weight_caption_text_color">#ffffff</color>
+    <color name="activity_profile_height_value_text_color">#ffffff</color>
+    <color name="activity_profile_weight_value_text_color">#ffffff</color>
+    <color name="activity_profile_next_button_text_color">#ffffff</color>
 
     <!--activity_achievement.xml-->
     <color name="activity_achievement_selected_medel_caption_default_color">#ffffff</color>
@@ -45,54 +48,56 @@
     <color name="activity_instructions_cache_color_hint">#000000</color>
 
     <!--activity_privacy_policy.xml-->
-    <color name="activity_privacy_policy_background_color">#1a237e</color>
     <color name="activity_privacy_policy_text_color">#ffffff</color>
 
     <!--activity_instructions_list_view_headers.xml-->
-    <color name="activity_instructions_list_view_headers_background">#151B54</color>
+    <color name="activity_instructions_list_view_headers_background">#534bae</color>
     <color name="activity_instructions_list_view_headers_text_color">#ffffff</color>
-    <color name="activity_instructions_list_view_value_background">#151B54</color>
+    <color name="activity_instructions_list_view_value_background">#534bae</color>
     <color name="activity_instructions_list_view_value_text_color">#ffffff</color>
-    
+
     <!--activity_profile_height_selector.xml-->
     <color name="activity_profile_height_selector_background_color">#ffffff</color>
-    <color name="activity_profile_height_selector_topic_color">#000000</color>
+    <color name="activity_profile_height_selector_topic_color">#140078</color>
 
     <!--activity_profile_weight_selector.xml-->
     <color name="activity_profile_weight_selector_background_color">#ffffff</color>
-    <color name="activity_profile_weight_selector_topic_color">#000000</color>
+    <color name="activity_profile_weight_selector_topic_color">#140078</color>
 
     <!--fragment_settings.xml-->
-    <color name="fragment_settings_background_color">#151B8D</color>
+    <color name="fragment_settings_background_color">#534bae</color>
     <color name="fragment_settings_text_color">#ffffff</color>
 
     <!--fragment_settings_gender_selector.xml-->
     <color name="fragment_settings_gender_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_gender_selector_topic_color">#000000</color>
+    <color name="fragment_settings_gender_selector_topic_color">#140078</color>
 
     <!--fragment_settings_height_selector.xml-->
     <color name="fragment_settings_height_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_height_selector_topic_color">#000000</color>
+    <color name="fragment_settings_height_selector_topic_color">#140078</color>
 
     <!--fragment_settings_language_selector.xml-->
     <color name="fragment_settings_language_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_language_selector_topic_color">#000000</color>
+    <color name="fragment_settings_language_selector_topic_color">#140078</color>
 
     <!--fragment_settings_sensitivity_selector.xml-->
     <color name="fragment_settings_sensitivity_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_sensitivity_selector_topic_color">#000000</color>
+    <color name="fragment_settings_sensitivity_selector_topic_color">#140078</color>
 
     <!--fragment_settings_step_goal_selector.xml-->
     <color name="fragment_settings_step_goal_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_step_goal_selector_topic_color">#000000</color>
+    <color name="fragment_settings_step_goal_selector_topic_color">#140078</color>
 
     <!--fragment_settings_weight_selector.xml-->
     <color name="fragment_settings_weight_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_weight_selector_topic_color">#000000</color>
+    <color name="fragment_settings_weight_selector_topic_color">#140078</color>
 
     <!--fragment_tips.xml-->
-    <color name="fragment_tips_background_color">#1a237e</color>
     <color name="fragment_tips_text_color">#ffffff</color>
+
+    <!--fragment_steps-->
+    <color name="fragment_steps_cardview_background">#534bae</color>
+    <color name="fragment_steps_text_color">#ffffff</color>
 
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>

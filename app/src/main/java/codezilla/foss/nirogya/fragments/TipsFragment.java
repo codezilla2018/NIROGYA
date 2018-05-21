@@ -14,7 +14,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,7 +40,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 
 import codezilla.foss.nirogya.Authenticated;
@@ -71,19 +69,20 @@ public class TipsFragment extends Fragment {
     private String secondText = "Seconds";
     private String simpleTimeFormat = "HH:mm:ss";
     private String marginTime = "24:00:00";
-    private String retrievedObjectJsonKey="text";
-    private String twitter_data_consumer_key_encode_type ="UTF-8";
-    private String twitter_data_consumer_secret_encode_type ="UTF-8";
-    private String twitter_data_http_post_header1_name ="Authorization";
-    private String twitter_data_http_post_header1_value ="Basic ";
-    private String twitter_data_http_post_header2_name ="Content-Type";
-    private String twitter_data_http_post_header2_value ="application/x-www-form-urlencoded;charset=UTF-8";
-    private String twitter_data_auth_token_type ="bearer";
+    private String retrievedObjectJsonKey = "text";
+    private String twitter_data_consumer_key_encode_type = "UTF-8";
+    private String twitter_data_consumer_secret_encode_type = "UTF-8";
+    private String twitter_data_http_post_header1_name = "Authorization";
+    private String twitter_data_http_post_header1_value = "Basic ";
+    private String twitter_data_http_post_header2_name = "Content-Type";
+    private String twitter_data_http_post_header2_value = "application/x-www-form-urlencoded;charset=UTF-8";
+    private String twitter_data_auth_token_type = "bearer";
     private String twitter_data_http_post_string_entity = "grant_type=client_credentials";
-    private String twitter_data_http_get_header1_name ="Authorization";
-    private String twitter_data_http_get_header1_value ="Bearer ";
-    private String twitter_data_http_get_header2_name ="Content-Type";
-    private String twitter_data_http_get_header2_value ="application/json";
+    private String twitter_data_http_get_header1_name = "Authorization";
+    private String twitter_data_http_get_header1_value = "Bearer ";
+    private String twitter_data_http_get_header2_name = "Content-Type";
+    private String twitter_data_http_get_header2_value = "application/json";
+    private String twitter_data_response_divide_pattern ="---";
 
     public static TipsFragment newInstance() {
         TipsFragment fragment = new TipsFragment();
@@ -121,7 +120,7 @@ public class TipsFragment extends Fragment {
     }
 
     private void showProgressDialog() {
-        progressDialog = new ProgressDialog(getActivity());
+        progressDialog = new ProgressDialog(getActivity(), R.style.Theme_Dialog);
         progressDialog.setMessage(getResources().getString(R.string.tips_fragment_progress_dialog_title)); // Setting Message
         progressDialog.setTitle(getResources().getString(R.string.tips_fragment_progress_dialog_message)); // Setting Title
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); // Progress Dialog Style Spinner
@@ -177,9 +176,9 @@ public class TipsFragment extends Fragment {
                     final long Hours = timeDiffer / (60 * 60 * 1000) % 24;
                     String timeDifference = Hours + " " + hourText + " " + Minutes + " " + minuteText + " " + Seconds + " " + secondText + " ";
 
-                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), R.style.Theme_Dialog);
                     builder.setTitle(getResources().getString(R.string.tips_fragment_alert_dialog_title))
-                            .setMessage(getResources().getString(R.string.tips_fragment_alert_dialog_message) + timeDifference)
+                            .setMessage(getResources().getString(R.string.tips_fragment_alert_dialog_message) + " " + timeDifference)
                             .setCancelable(false)
                             .setPositiveButton(getResources().getString(R.string.tips_fragment_alert_dialog_ok_button_text), new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
@@ -202,6 +201,7 @@ public class TipsFragment extends Fragment {
         protected void onPreExecute() {
             super.onPreExecute();
         }
+
         @Override
         protected String doInBackground(String... screenNames) {
             String result = null;
@@ -222,7 +222,7 @@ public class TipsFragment extends Fragment {
                 JSONArray jsonArray = new JSONArray(result);
                 JSONObject jsonObject = jsonArray.getJSONObject(0);
                 String tweet = jsonObject.getString(retrievedObjectJsonKey);
-                String[] division = tweet.split("---");
+                String[] division = tweet.split(twitter_data_response_divide_pattern);
                 String caption = division[0];
                 String description = division[1];
                 DateFormat dateFormat = new SimpleDateFormat(simpleDateFormat);
@@ -236,6 +236,7 @@ public class TipsFragment extends Fragment {
                 e.printStackTrace();
             }
         }
+
         // convert a JSON authentication object into an Authenticated object
         private Authenticated jsonToAuthenticated(String rawAuthorization) {
             Authenticated auth = null;

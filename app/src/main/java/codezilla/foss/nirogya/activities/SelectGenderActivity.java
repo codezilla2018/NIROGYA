@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,7 +20,8 @@ import codezilla.foss.nirogya.database.NirogyaDataSource;
 
 public class SelectGenderActivity extends AppCompatActivity {
 
-    private Button genderMale,genderFemale,nextButton;
+    private ImageButton genderMale,genderFemale;
+    private Button nextButton;
     private TextView femaleText, maleText;
     private ImageView femaleChoice,maleChoice;
     private static  String selectedGender;

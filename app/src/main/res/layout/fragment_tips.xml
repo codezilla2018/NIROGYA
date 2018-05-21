@@ -5,7 +5,13 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@color/fragment_tips_background_color">
+    android:background="@drawable/fragment_tips_background">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fragment_tips_icon"/>
 
     <TextView
         android:id="@+id/caption"
@@ -15,6 +21,7 @@
         android:textSize="30dp"
         android:gravity="center"
         android:textStyle="bold"
+        android:layout_marginTop="20dp"
         android:textColor="@color/fragment_tips_text_color"/>
 
     <TextView
@@ -24,7 +31,7 @@
         android:text=""
         android:textSize="20dp"
         android:gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/fragment_tips_text_color"/>
 
 </LinearLayout>

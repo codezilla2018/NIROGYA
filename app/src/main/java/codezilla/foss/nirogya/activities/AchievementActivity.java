@@ -8,6 +8,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import codezilla.foss.nirogya.R;
@@ -17,6 +18,7 @@ public class AchievementActivity extends AppCompatActivity {
     private Button targetAcheivement;
     private Button bronzeMedal, silverMedal, goldMedal;
     private LinearLayout silverMedalLayout;
+    private TextView targetAchievementPoints;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class AchievementActivity extends AppCompatActivity {
             window.setStatusBarColor(this.getResources().getColor(R.color.status_bar_color));
         }
         targetAcheivement = findViewById(R.id.targetAchievement);
+        targetAchievementPoints = findViewById(R.id.targetAchievementPoints);
         bronzeMedal = findViewById(R.id.bronzeMedal);
         silverMedal = findViewById(R.id.silverMedal);
         goldMedal = findViewById(R.id.goldMedal);
@@ -37,16 +40,19 @@ public class AchievementActivity extends AppCompatActivity {
         bronzeMedal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 targetAcheivement.setBackgroundResource(R.drawable.bronze);
+                targetAchievementPoints.setText(getResources().getString(R.string.achievement_activity_target_point_1));
             }
         });
         silverMedal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 targetAcheivement.setBackgroundResource(R.drawable.silver);
+                targetAchievementPoints.setText(getResources().getString(R.string.achievement_activity_target_point_2));
             }
         });
         goldMedal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 targetAcheivement.setBackgroundResource(R.drawable.gold);
+                targetAchievementPoints.setText(getResources().getString(R.string.achievement_activity_target_point_3));
             }
         });
     }
