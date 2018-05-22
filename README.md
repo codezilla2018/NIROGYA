@@ -14,7 +14,21 @@
   <li>Clone or Download the repository</li>
   <li>open the project using android studio</li>
   <li>Build and Run the project</li>
-</ul>  
+</ul> 
+ <div class="row">
+   <div class="column">
+     <img src="screenshots/s1.png" alt="loading screenshot"  width="200" height="300" float="left">
+   </div>
+   <div class="column">
+     <img src="screenshots/s2.png" alt="loading screenshot"  width="200" height="300" float="left">
+   </div>
+   <div class="column">
+     <img src="screenshots/s3.png" alt="loading screenshot"  width="200" height="300" float="left">
+   </div>
+     <div class="column">
+     <img src="screenshots/s4.png" alt="loading screenshot"  width="200" height="300" float="left">
+   </div>
+ </div>
 <h2>Features</h2>
 <p>NIROGYA is based on codezilla hackathon requiremnt -Simple fitness android app that displays healthy tips from twitter stream daily and displays estimated calories burnt by analyzing foot step count</p>
 <ul>
