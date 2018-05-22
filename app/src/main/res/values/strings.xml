@@ -12,7 +12,7 @@
     <string name="activity_select_gender_next_button_text">NEXT</string>
 
     <!--ProfileActivity-->
-    <string name="profile_activity_title_text">Live with NIROGYA</string>
+    <string name="profile_activity_title_text">NIROGYA USER DETAILS</string>
     <string name="profile_activity_message_text">Please select height and weight</string>
     <string name="profile_activity_ok_button_text">YES</string>
 

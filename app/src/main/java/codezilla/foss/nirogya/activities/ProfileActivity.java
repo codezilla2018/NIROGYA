@@ -279,7 +279,7 @@ public class ProfileActivity extends AppCompatActivity {
                     startActivity(intent);
                 } else {
                     final AlertDialog alertDialog = new AlertDialog.Builder(
-                            ProfileActivity.this).create();
+                            ProfileActivity.this,R.style.Theme_Dialog).create();
                     // Setting Dialog Title
                     alertDialog.setTitle(getResources().getString(R.string.profile_activity_title_text));
                     // Setting Dialog Message
