@@ -79,5 +79,13 @@
 <ul>
   <li>Contributer: Kasun Chinthaka Piyarathna</li>
 </ul>
+<h2>Licence</h2>
+  <li>This project is maintained under the MIT licence.</li>
+<h2>Credits</h2>
+ <ul>
+   <li><a href="https://fitness.stackexchange.com/">Stack Exchange - Physical Fitness</a></li>
+   <li><a href="https://twitter.com/">Twitter</a></li>
+   <li><a href="https://www.facebook.com/mozillauwu/">Mozilla Campus Club - UWU</a></li> 
+ </ul>
 </body>
 </html>
