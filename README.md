@@ -15,6 +15,8 @@
   <li>open the project using android studio</li>
   <li>Build and Run the project</li>
 </ul>  
+<h2>Features</h2>
+<img src="https://drive.google.com/open?id=1YCri8bo8NNFNYbIyat9INOxsOKkavnl8" alt="UI width="550" height="350"/>
 <h2>Who do I talk to?</h2>
 <ul>
   <li>Contributer: Kasun Chinthaka Piyarathna</li>
