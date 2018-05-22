@@ -3,7 +3,7 @@
 <h1>NIROGYA- CODEZILLA 2018</h1>
 </head>
 <body>
-<h2>What is this repository for?</h2>
+  <h2>What is this repository for?</h2>
 <ul>
   <li>This repository is for NIROGYA android application.</li>
   <li>System Requiremnts: - Java 8-9, Android Studio</li>
@@ -15,20 +15,38 @@
   <li>open the project using android studio</li>
   <li>Build and Run the project</li>
 </ul> 
- <div class="row">
-   <div class="column">
-     <img src="screenshots/s1.png" alt="loading screenshot"  width="200" height="300" float="left">
-   </div>
-   <div class="column">
-     <img src="screenshots/s2.png" alt="loading screenshot"  width="200" height="300" float="left">
-   </div>
-   <div class="column">
-     <img src="screenshots/s3.png" alt="loading screenshot"  width="200" height="300" float="left">
-   </div>
-     <div class="column">
-     <img src="screenshots/s4.png" alt="loading screenshot"  width="200" height="300" float="left">
-   </div>
- </div>
+  <table style="width:100%">
+  <tr>
+    <th><img src="screenshots/s1.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s2.png" alt="loading screenshot"  width="200" height="320"</th> 
+    <th><img src="screenshots/s3.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s4.png" alt="loading screenshot"  width="200" height="320"</th>
+   </tr>
+     <tr>
+    <th><img src="screenshots/s5.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s6.png" alt="loading screenshot"  width="200" height="320"</th> 
+    <th><img src="screenshots/s7.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s8.png" alt="loading screenshot"  width="200" height="320"</th>
+   </tr>
+     <tr>
+    <th><img src="screenshots/s9.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s10.png" alt="loading screenshot"  width="200" height="320"</th> 
+    <th><img src="screenshots/s11.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s12.png" alt="loading screenshot"  width="200" height="320"</th>
+   </tr>
+     <tr>
+    <th><img src="screenshots/s13.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s14.png" alt="loading screenshot"  width="200" height="320"</th> 
+    <th><img src="screenshots/s15.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s16.png" alt="loading screenshot"  width="200" height="320"</th>
+   </tr>
+     <tr>
+    <th><img src="screenshots/s17.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s18.png" alt="loading screenshot"  width="200" height="320"</th> 
+    <th><img src="screenshots/s19.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s20.png" alt="loading screenshot"  width="200" height="320"</th>
+   </tr>
+</table>
 <h2>Features</h2>
 <p>NIROGYA is based on codezilla hackathon requiremnt -Simple fitness android app that displays healthy tips from twitter stream daily and displays estimated calories burnt by analyzing foot step count</p>
 <ul>
