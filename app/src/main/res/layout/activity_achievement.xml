@@ -19,7 +19,7 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
-            android:background="@drawable/bronze" />
+            android:background="@drawable/activity_achievement_bronze_medal" />
 
         <TextView
             android:id="@+id/targetAchievementPoints"
@@ -58,7 +58,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/bronze" />
+                    android:background="@drawable/activity_achievement_bronze_medal" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/silver" />
+                    android:background="@drawable/activity_achievement_silver_medal" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -102,7 +102,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/gold" />
+                    android:background="@drawable/activity_achievement_gold_medal" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

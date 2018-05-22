@@ -6,10 +6,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import codezilla.foss.nirogya.R;
 
@@ -39,19 +37,19 @@ public class AchievementActivity extends AppCompatActivity {
         silverMedalLayout = findViewById(R.id.silverMedalLayout);
         bronzeMedal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                targetAcheivement.setBackgroundResource(R.drawable.bronze);
+                targetAcheivement.setBackgroundResource(R.drawable.activity_achievement_bronze_medal);
                 targetAchievementPoints.setText(getResources().getString(R.string.achievement_activity_target_point_1));
             }
         });
         silverMedal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                targetAcheivement.setBackgroundResource(R.drawable.silver);
+                targetAcheivement.setBackgroundResource(R.drawable.activity_achievement_silver_medal);
                 targetAchievementPoints.setText(getResources().getString(R.string.achievement_activity_target_point_2));
             }
         });
         goldMedal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                targetAcheivement.setBackgroundResource(R.drawable.gold);
+                targetAcheivement.setBackgroundResource(R.drawable.activity_achievement_gold_medal);
                 targetAchievementPoints.setText(getResources().getString(R.string.achievement_activity_target_point_3));
             }
         });

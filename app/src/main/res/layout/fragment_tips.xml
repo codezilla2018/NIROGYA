@@ -34,4 +34,13 @@
         android:layout_marginTop="20dp"
         android:textColor="@color/fragment_tips_text_color"/>
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tips_fragment_twitter_text"
+        android:gravity="center"
+        android:textColor="@color/fragment_tips_text_color"
+        android:layout_marginTop="30dp"/>
+
 </LinearLayout>
