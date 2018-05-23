@@ -37,6 +37,10 @@
     <color name="activity_profile_weight_value_text_color">#ffffff</color>
     <color name="activity_profile_next_button_text_color">#ffffff</color>
 
+    <!--achievement_activity-->
+    <color name="achievement_activity_doco_view_color_1">#3bf92a</color>
+    <color name="achievement_activity_doco_view_color_2">#f9f004</color>
+
     <!--activity_achievement.xml-->
     <color name="activity_achievement_selected_medel_caption_default_color">#ffffff</color>
     <color name="activity_achievement_selected_medel_caption_steps_text">#ffffff</color>

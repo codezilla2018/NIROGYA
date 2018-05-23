@@ -189,6 +189,9 @@ I want to inform users of this Service that these third parties have access to y
     <string name="achievement_activity_target_point_1">10000</string>
     <string name="achievement_activity_target_point_2">20000</string>
     <string name="achievement_activity_target_point_3">30000</string>
+    <string name="achievement_activity_target_1_text">Bronze Medal</string>
+    <string name="achievement_activity_target_2_text">Silver Medal</string>
+    <string name="achievement_activity_target_3_text">Gold Medal</string>
 
     <!--bottom_navigation_bar_items-->
     <string name="item_1">STEPS</string>
