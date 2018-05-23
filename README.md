@@ -46,6 +46,10 @@
     <th><img src="screenshots/s19.png" alt="loading screenshot"  width="200" height="320"</th>
     <th><img src="screenshots/s20.png" alt="loading screenshot"  width="200" height="320"</th>
    </tr>
+     <tr>
+    <th><img src="screenshots/s21.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s22.png" alt="loading screenshot"  width="200" height="320"</th> 
+   </tr>
 </table>
 <h2>Features</h2>
 <p>NIROGYA is based on codezilla hackathon requiremnt -Simple fitness android app that displays healthy tips from twitter stream daily and displays estimated calories burnt by analyzing foot step count</p>
