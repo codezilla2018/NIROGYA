@@ -84,6 +84,8 @@ public class TipsFragment extends Fragment {
     private String twitter_data_http_get_header2_value = "application/json";
     private String twitter_data_response_divide_pattern ="---";
 
+
+
     public static TipsFragment newInstance() {
         TipsFragment fragment = new TipsFragment();
         return fragment;
