@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -14,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,6 +46,7 @@ import java.util.Date;
 
 import codezilla.foss.nirogya.Authenticated;
 import codezilla.foss.nirogya.R;
+import codezilla.foss.nirogya.activities.TwitterLoginActivity;
 import codezilla.foss.nirogya.database.NirogyaDataSource;
 
 
@@ -55,6 +58,7 @@ public class TipsFragment extends Fragment {
 
     private final static String screenName = "nirogya";
     private TextView captionTextView, descriptionTextView;
+    private Button viewMoreTweets;
     private final static String consumerKey = "nW88XLuFSI9DEfHOX2tpleHbR";
     private final static String consumerSecret = "hCg3QClZ1iLR13D3IeMvebESKmakIelp4vwFUICuj6HAfNNCer";
     private final static String twitterTokenUrl = "https://api.twitter.com/oauth2/token";
@@ -82,8 +86,7 @@ public class TipsFragment extends Fragment {
     private String twitter_data_http_get_header1_value = "Bearer ";
     private String twitter_data_http_get_header2_name = "Content-Type";
     private String twitter_data_http_get_header2_value = "application/json";
-    private String twitter_data_response_divide_pattern ="---";
-
+    private String twitter_data_response_divide_pattern = "---";
 
 
     public static TipsFragment newInstance() {
@@ -105,7 +108,15 @@ public class TipsFragment extends Fragment {
         View fragment_tips = inflater.inflate(R.layout.fragment_tips, container, false);
         captionTextView = fragment_tips.findViewById(R.id.caption);
         descriptionTextView = fragment_tips.findViewById(R.id.description);
+        viewMoreTweets = fragment_tips.findViewById(R.id.view_more_tweets);
         checkDayGap();
+        viewMoreTweets.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), TwitterLoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return fragment_tips;
     }
 

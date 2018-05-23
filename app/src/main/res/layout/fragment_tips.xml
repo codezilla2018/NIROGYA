@@ -1,46 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="@drawable/fragment_tips_background"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/fragment_tips_background">
+    android:padding="10dp">
 
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/fragment_tips_icon"/>
-
-    <TextView
-        android:id="@+id/caption"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="30dp"
         android:gravity="center"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/fragment_tips_text_color"/>
-
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="20dp"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:textColor="@color/fragment_tips_text_color"/>
+        android:orientation="vertical">
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/tips_fragment_twitter_text"
-        android:gravity="center"
-        android:textColor="@color/fragment_tips_text_color"
-        android:layout_marginTop="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fragment_tips_icon" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/fragment_tips_text_color"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/fragment_tips_text_color"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/view_more_tweets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:text="VIEW MORE"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/primaryTextColor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/tips_fragment_twitter_text"
+            android:textColor="@color/fragment_tips_text_color" />
+    </LinearLayout>
+
+</ScrollView>
