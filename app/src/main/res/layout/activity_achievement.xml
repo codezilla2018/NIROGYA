@@ -14,47 +14,16 @@
         android:layout_marginTop="20dp"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:gravity="center"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/textPercentage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="40sp" />
-
-            <TextView
-                android:id="@+id/textRemaining"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textPercentage"
-                android:layout_centerHorizontal="true"
-                android:maxWidth="200dp"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-            <com.hookedonplay.decoviewlib.DecoView xmlns:custom="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/dynamicArcView"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                custom:dv_lineWidth="26dp">
-
-            </com.hookedonplay.decoviewlib.DecoView>
-
-
-        </RelativeLayout>
-
-
         <Button
             android:id="@+id/targetAchievement"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
+            android:text="Bronze Medal"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:gravity="center"
             android:background="@drawable/activity_achievement_bronze_medal" />
 
         <TextView
@@ -79,6 +48,61 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.hookedonplay.decoviewlib.DecoView xmlns:custom="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/dynamicArcView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    custom:dv_lineWidth="20dp"></com.hookedonplay.decoviewlib.DecoView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/text_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/activity_achievement_text_percentage_text_color"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/text_remaining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/activity_achievement_text_remaining_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:orientation="horizontal"
             android:weightSum="3">
@@ -94,6 +118,10 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
+                    android:text="Bronze Medal"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:gravity="center"
                     android:background="@drawable/activity_achievement_bronze_medal" />
 
                 <TextView
@@ -117,6 +145,10 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
+                    android:text="Silver Medal"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:gravity="center"
                     android:background="@drawable/activity_achievement_silver_medal" />
 
                 <TextView
@@ -139,6 +171,10 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
+                    android:text="Gold Medal"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:gravity="center"
                     android:background="@drawable/activity_achievement_gold_medal" />
 
                 <TextView

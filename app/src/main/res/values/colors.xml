@@ -43,6 +43,8 @@
     <color name="activity_achievement_bronze_medal_text_color">#ffffff</color>
     <color name="activity_achievement_silver_medal_text_color">#ffffff</color>
     <color name="activity_achievement_gold_medal_text_color">#ffffff</color>
+    <color name="activity_achievement_text_percentage_text_color">#ffffff</color>
+    <color name="activity_achievement_text_remaining_text_color">#ffffff</color>
 
     <!--activity_instructions.xml-->
     <color name="activity_instructions_cache_color_hint">#000000</color>

@@ -58,18 +58,21 @@ public class AchievementActivity extends AppCompatActivity {
         bronzeMedal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 targetAcheivement.setBackgroundResource(R.drawable.activity_achievement_bronze_medal);
+                targetAcheivement.setText("Bronze Medal");
                 targetAchievementPoints.setText(getResources().getString(R.string.achievement_activity_target_point_1));
             }
         });
         silverMedal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 targetAcheivement.setBackgroundResource(R.drawable.activity_achievement_silver_medal);
+                targetAcheivement.setText("Silver Medal");
                 targetAchievementPoints.setText(getResources().getString(R.string.achievement_activity_target_point_2));
             }
         });
         goldMedal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 targetAcheivement.setBackgroundResource(R.drawable.activity_achievement_gold_medal);
+                targetAcheivement.setText("Gold Medal");
                 targetAchievementPoints.setText(getResources().getString(R.string.achievement_activity_target_point_3));
             }
         });
@@ -89,7 +92,7 @@ public class AchievementActivity extends AppCompatActivity {
                 .setInitialVisibility(false)
                 .build();
 
-        final TextView textPercentage = (TextView) findViewById(R.id.textPercentage);
+        final TextView textPercentage = (TextView) findViewById(R.id.text_percentage);
         seriesItem.addArcSeriesItemListener(new SeriesItem.SeriesItemListener() {
             @Override
             public void onSeriesItemAnimationProgress(float percentComplete, float currentPosition) {
@@ -104,7 +107,7 @@ public class AchievementActivity extends AppCompatActivity {
         });
 
 
-        final TextView textToGo = (TextView) findViewById(R.id.textRemaining);
+        final TextView textToGo = (TextView) findViewById(R.id.text_remaining);
         seriesItem.addArcSeriesItemListener(new SeriesItem.SeriesItemListener() {
             @Override
             public void onSeriesItemAnimationProgress(float percentComplete, float currentPosition) {
@@ -218,7 +221,7 @@ public class AchievementActivity extends AppCompatActivity {
     }
 
     private void resetText() {
-        ((TextView) findViewById(R.id.textPercentage)).setText("");
-        ((TextView) findViewById(R.id.textRemaining)).setText("");
+        ((TextView) findViewById(R.id.text_percentage)).setText("");
+        ((TextView) findViewById(R.id.text_remaining)).setText("");
     }
 }
