@@ -100,6 +100,8 @@ I want to inform users of this Service that these third parties have access to y
     <string name="tips_fragment_alert_dialog_message">Next health tip will be available within </string>
     <string name="tips_fragment_alert_dialog_ok_button_text">OK</string>
     <string name="tips_fragment_twitter_text"> This daily health tips service is based on nirogya offical twitter page.</string>
+    <string name="tips_fragment_offline_internet_connection"> This service needs an internet connection.</string>
+
 
 
     <!--activity_profile_height_selector.xml-->
@@ -198,7 +200,11 @@ I want to inform users of this Service that these third parties have access to y
     <string name="item_2">TIPS</string>
     <string name="item_3">MORE</string>
 
-    <string name="no_tweets">No Tweets</string>
+    <!--activity_timeline.xml-->
+    <string name="activity_timeline_no_tweet_message">No Tweets</string>
+
+    <!--activity_twitter_login.xml-->
+    <string name="activity_twitter_login_pre_message">Login once, We\'ll remember your details until you signed out. Next time when you are going to log in, You will be directly moved to the NIROGYA timeline.</string>
 
 
 </resources>

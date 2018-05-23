@@ -112,12 +112,28 @@ public class TipsFragment extends Fragment {
         checkDayGap();
         viewMoreTweets.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), TwitterLoginActivity.class);
-                startActivity(intent);
+                checkConnection();
             }
         });
 
         return fragment_tips;
+    }
+    protected boolean isOnline() {
+        ConnectivityManager cm = (ConnectivityManager)getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public void checkConnection(){
+        if(isOnline()){
+            Intent intent = new Intent(getActivity(), TwitterLoginActivity.class);
+            startActivity(intent);
+        }else{
+            Toast.makeText(getActivity(), getResources().getString(R.string.tips_fragment_offline_internet_connection), Toast.LENGTH_SHORT).show();
+        }
     }
 
     // download twitter timeline after first checking to see if there is a network connection
