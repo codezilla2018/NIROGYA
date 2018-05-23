@@ -14,11 +14,47 @@
         android:layout_marginTop="20dp"
         android:orientation="vertical">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/textRemaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPercentage"
+                android:layout_centerHorizontal="true"
+                android:maxWidth="200dp"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <com.hookedonplay.decoviewlib.DecoView xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/dynamicArcView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                custom:dv_lineWidth="26dp">
+
+            </com.hookedonplay.decoviewlib.DecoView>
+
+
+        </RelativeLayout>
+
+
         <Button
             android:id="@+id/targetAchievement"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:background="@drawable/activity_achievement_bronze_medal" />
 
         <TextView
@@ -43,8 +79,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="50dp"
+            android:orientation="horizontal"
             android:weightSum="3">
 
             <LinearLayout
@@ -63,10 +99,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="@string/activity_achievement_bronze_medal_text"
-                    android:textColor="@color/activity_achievement_bronze_medal_text_color"
-                    android:layout_marginTop="10dp"/>
+                    android:textColor="@color/activity_achievement_bronze_medal_text_color" />
             </LinearLayout>
 
             <LinearLayout
@@ -86,10 +122,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="@string/activity_achievement_silver_medal_text"
-                    android:textColor="@color/activity_achievement_silver_medal_text_color"
-                    android:layout_marginTop="10dp"/>
+                    android:textColor="@color/activity_achievement_silver_medal_text_color" />
             </LinearLayout>
 
             <LinearLayout
@@ -97,19 +133,21 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
+
                 <Button
                     android:id="@+id/goldMedal"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_gravity="center"
                     android:background="@drawable/activity_achievement_gold_medal" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:gravity="center"
                     android:text="@string/activity_achievement_gold_medal_text"
-                    android:textColor="@color/activity_achievement_gold_medal_text_color"
-                    android:layout_marginTop="10dp"/>
+                    android:textColor="@color/activity_achievement_gold_medal_text_color" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

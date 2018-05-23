@@ -34,6 +34,7 @@ dependencies {
     compile 'com.shawnlin:number-picker:2.4.6'
     compile 'com.android.support:design:27.1.1'
     compile 'com.github.uin3566:AllAngleExpandableButton:v1.2.0'
+    compile 'com.github.bmarrdev:android-DecoView-charting:v0.9.6'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
