@@ -198,5 +198,7 @@ I want to inform users of this Service that these third parties have access to y
     <string name="item_2">TIPS</string>
     <string name="item_3">MORE</string>
 
+    <string name="no_tweets">No Tweets</string>
+
 
 </resources>
