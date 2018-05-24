@@ -39,7 +39,6 @@
         <activity
             android:name=".activities.AchievementActivity"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".activities.TwitterLoginActivity"
             android:screenOrientation="portrait" />

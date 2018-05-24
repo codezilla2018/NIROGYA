@@ -40,14 +40,13 @@ public class ProfileActivity extends AppCompatActivity {
     private static String height, weight;
     private String selectedGender;
     private NirogyaDataSource nirogyaDataSource;
-    private String transferStringKey= "gender";
+    private String transferStringKey = "gender";
     private String userDetailsStatusKey = "ok";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -56,22 +55,17 @@ public class ProfileActivity extends AppCompatActivity {
         }
         Bundle bundle = getIntent().getExtras();
         selectedGender = bundle.getString(transferStringKey);
-
         nirogyaDataSource = new NirogyaDataSource(this);
         nirogyaDataSource.open();
-
         selectHeight = findViewById(R.id.select_height);
         selectWeight = findViewById(R.id.select_weight);
         heightChoice = findViewById(R.id.height_choice);
         weightChoice = findViewById(R.id.weight_choice);
         nextButton = findViewById(R.id.next_button);
-
         // Get the application context
         currentContext = getApplicationContext();
-
         // Get the widgets reference from XML layout
         parentLayout = findViewById(R.id.activity_profile);
-
         selectHeight.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Initialize a new instance of LayoutInflater service
@@ -164,15 +158,12 @@ public class ProfileActivity extends AppCompatActivity {
                 });
             }
         });
-
         selectWeight.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Initialize a new instance of LayoutInflater service
                 LayoutInflater inflater = (LayoutInflater) currentContext.getSystemService(LAYOUT_INFLATER_SERVICE);
-
                 // Inflate the activity_profile_height_selector layout/view
                 View customView = inflater.inflate(R.layout.activity_profile_weight_selector, null);
-
                 /*
                     public PopupWindow (View contentView, int width, int height)
                         Create a new non focusable popup window which can display the contentView.
@@ -196,19 +187,15 @@ public class ProfileActivity extends AppCompatActivity {
                         width - 200,
                         ViewGroup.LayoutParams.WRAP_CONTENT
                 );
-
                 // Set an elevation value for popup window
                 // Call requires API level 21
                 if (Build.VERSION.SDK_INT >= 21) {
                     popupWindow.setElevation(5.0f);
                 }
-
                 // Get a reference for the activity_profile_height_selector view close button
                 Button cancelButton = customView.findViewById(R.id.fs_gender_cancel_button);
-
                 // Get a reference for the activity_profile_height_selector view OK button
                 Button okButton = customView.findViewById(R.id.fs_gender_ok_button);
-
                 // Set a click listener for the popup window close button
                 cancelButton.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -228,7 +215,6 @@ public class ProfileActivity extends AppCompatActivity {
                         popupWindow.dismiss();
                     }
                 });
-
                 /*
                     public void showAtLocation (View parent, int gravity, int x, int y)
                         Display the content view in a popup window at the specified location. If the
@@ -245,18 +231,14 @@ public class ProfileActivity extends AppCompatActivity {
                 */
                 // Finally, show the popup window at the center location of root relative layout
                 popupWindow.showAtLocation(parentLayout, Gravity.CENTER, 0, 0);
-
                 NumberPicker numberPlicker = customView.findViewById(R.id.numberPlicker);
-
                 //Populate NumberPicker values from minimum and maximum value range
                 //Set the minimum value of NumberPicker
                 numberPlicker.setMinValue(30);
                 //Specify the maximum value/number of NumberPicker
                 numberPlicker.setMaxValue(150);
-
                 //Gets whether the selector wheel wraps when reaching the min/max value.
                 numberPlicker.setWrapSelectorWheel(true);
-
                 //Set a value change listener for NumberPicker
                 numberPlicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
                     @Override
@@ -268,7 +250,6 @@ public class ProfileActivity extends AppCompatActivity {
                 });
             }
         });
-
         nextButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 if (height != null && !height.isEmpty() && weight != null && !weight.isEmpty()) {
@@ -279,7 +260,7 @@ public class ProfileActivity extends AppCompatActivity {
                     startActivity(intent);
                 } else {
                     final AlertDialog alertDialog = new AlertDialog.Builder(
-                            ProfileActivity.this,R.style.Theme_Dialog).create();
+                            ProfileActivity.this, R.style.Theme_Dialog).create();
                     // Setting Dialog Title
                     alertDialog.setTitle(getResources().getString(R.string.profile_activity_title_text));
                     // Setting Dialog Message

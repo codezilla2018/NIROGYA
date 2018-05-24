@@ -108,7 +108,6 @@ public class NirogyaDataSource {
     public String[] getDataUserDetails(String index) {
         Cursor cursor = sqLiteDatabase.query(userDetailsTable, null, " _id=?",
                 new String[]{index}, null, null, null);
-
         cursor.moveToFirst();
         String[] arr = new String[3];
         String gender = cursor.getString(cursor.getColumnIndex(userDetailsGenderKey));
@@ -120,6 +119,7 @@ public class NirogyaDataSource {
         cursor.close();
         return arr;
     }
+
     public String getStatusFromUserDetails(String index) {
         Cursor cursor = sqLiteDatabase.query(userDetailsTable, null, " _id=?",
                 new String[]{index}, null, null, null);
@@ -133,6 +133,7 @@ public class NirogyaDataSource {
         cursor.close();
         return status;
     }
+
     public String[] getAllDataFromPedometer(String index) {
         Cursor cursor = sqLiteDatabase.query(pedometerTable, null, " _id=?",
                 new String[]{index}, null, null, null);

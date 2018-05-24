@@ -21,15 +21,13 @@ public class BurntCalories {
     private static double[] returnValues;
 
     public static double[] findBurntCalories(double stepsCount, double height, double weight) {
-
         caloriesBurnedPerMile = walkingFactor * (weight * 2.2);
         strip = height * 0.415;
         stepCountMile = 160934.4 / strip;
         conversationFactor = caloriesBurnedPerMile / stepCountMile;
         caloriesBurned = stepsCount * conversationFactor;
         distance = (stepsCount * strip) / 100000;
-        returnValues= new double[]{caloriesBurned, distance};
+        returnValues = new double[]{caloriesBurned, distance};
         return returnValues;
-
     }
 }

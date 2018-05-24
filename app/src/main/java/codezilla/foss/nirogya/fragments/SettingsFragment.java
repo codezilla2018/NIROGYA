@@ -78,7 +78,6 @@ public class SettingsFragment extends Fragment {
         weightSelectedValue = fragmentSettings.findViewById(R.id.weight_seleced_value);
         heightSelectedValue = fragmentSettings.findViewById(R.id.height_seleced_value);
         genderSelectedValue = fragmentSettings.findViewById(R.id.gender_seleced_value);
-
         String[] getUserData = nirogyaDataSource.getDataUserDetails(defaultTableRowIndexvalue);
         genderSelectedValue.setText(getUserData[0]);
         heightSelectedValue.setText(getUserData[1]);
@@ -86,16 +85,12 @@ public class SettingsFragment extends Fragment {
         String[] retriedData = nirogyaDataSource.getAllDataFromPedometer(defaultTableRowIndexvalue);
         sensitivitySelectedValue.setText(retriedData[5]);
         stepGoalSelecedValue.setText(retriedData[4]);
-
         stepGoalSelector.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
                 // Initialize a new instance of LayoutInflater service
                 LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(LAYOUT_INFLATER_SERVICE);
-
                 // Inflate the activity_profile_height_selector layout/view
                 final View customView = inflater.inflate(R.layout.fragment_settings_step_goal_selector, null);
-
                 /*
                     public PopupWindow (View contentView, int width, int height)
                         Create a new non focusable popup window which can display the contentView.
@@ -119,19 +114,15 @@ public class SettingsFragment extends Fragment {
                         width - 200,
                         ViewGroup.LayoutParams.WRAP_CONTENT
                 );
-
                 // Set an elevation value for popup window
                 // Call requires API level 21
                 if (Build.VERSION.SDK_INT >= 21) {
                     popupWindow.setElevation(5.0f);
                 }
-
                 // Get a reference for the activity_profile_height_selector view close button
                 Button cancelButton = customView.findViewById(R.id.fs_step_goal_cancel_button);
-
                 // Get a reference for the activity_profile_height_selector view OK button
                 Button okButton = customView.findViewById(R.id.fs_step_goal_ok_button);
-
                 // Set a click listener for the popup window close button
                 cancelButton.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -157,7 +148,6 @@ public class SettingsFragment extends Fragment {
                         popupWindow.dismiss();
                     }
                 });
-
                 /*
                     public void showAtLocation (View parent, int gravity, int x, int y)
                         Display the content view in a popup window at the specified location. If the
@@ -176,13 +166,9 @@ public class SettingsFragment extends Fragment {
                 popupWindow.showAtLocation(parentLayout, Gravity.CENTER, 0, 0);
                 radioStepGoal = customView.findViewById(R.id.radio_step_goal);
             }
-
-
         });
-
         sensitivitySelector.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
                 // Initialize a new instance of LayoutInflater service
                 LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(LAYOUT_INFLATER_SERVICE);
                 // Inflate the activity_profile_height_selector layout/view
@@ -278,7 +264,6 @@ public class SettingsFragment extends Fragment {
         });
         weightSelector.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
                 // Initialize a new instance of LayoutInflater service
                 LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(LAYOUT_INFLATER_SERVICE);
                 // Inflate the activity_profile_height_selector layout/view
@@ -369,7 +354,6 @@ public class SettingsFragment extends Fragment {
                         Toast.makeText(getActivity(), String.valueOf(newVal), Toast.LENGTH_SHORT).show();
                     }
                 });
-
             }
 
 
@@ -431,7 +415,6 @@ public class SettingsFragment extends Fragment {
                         popupWindow.dismiss();
                     }
                 });
-
                 /*
                     public void showAtLocation (View parent, int gravity, int x, int y)
                         Display the content view in a popup window at the specified location. If the
@@ -465,7 +448,6 @@ public class SettingsFragment extends Fragment {
                         Toast.makeText(getActivity(), String.valueOf(newVal), Toast.LENGTH_SHORT).show();
                     }
                 });
-
             }
 
 
@@ -532,7 +514,6 @@ public class SettingsFragment extends Fragment {
                         popupWindow.dismiss();
                     }
                 });
-
                 /*
                     public void showAtLocation (View parent, int gravity, int x, int y)
                         Display the content view in a popup window at the specified location. If the

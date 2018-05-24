@@ -104,7 +104,6 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
         miles = fragment_steps.findViewById(R.id.miles);
         stepGoal = fragment_steps.findViewById(R.id.step_goal);
         stepGoal.setText(retrivedData[4]);
-
         if (retrivedData[0] != null) {
             if (retrivedData[0].equals(pedometerTableStatusFieldExecutionValue)) {
                 countSteps.setText(retrivedData[1]);
@@ -119,8 +118,6 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
                 miles.setText(formatter.format(Double.parseDouble(retrivedData[2])));
             }
         }
-
-
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -130,8 +127,6 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
                 btnStop.setVisibility(View.VISIBLE);
             }
         });
-
-
         btnStop.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -140,11 +135,9 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
                 sensorManager.unregisterListener(StepsFragment.this);
                 btnStop.setVisibility(View.GONE);
                 btnStart.setVisibility(View.VISIBLE);
-
             }
         });
         installButton90to90();
-
         // Inflate the layout for this fragment
         return fragment_steps;
     }
@@ -169,7 +162,6 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
         nirogyaDataSource.updatePedomter(defaultTableRowIndexValue, pedometerTableStatusFieldExecutionValue, String.valueOf(numSteps), Double.toString(returnVal[1]), Double.toString(returnVal[0]));
         calories_burnt.setText(formatter.format(returnVal[0]));
         miles.setText(formatter.format(returnVal[1]));
-
     }
 
     public void installButton90to90() {
@@ -216,10 +208,8 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
                                         countSteps.setText(initialCountValue);
                                         calories_burnt.setText(initialCountValue);
                                         miles.setText(initialCountValue);
-
                                     }
                                 });
-
                         alertDialogBuilder.setNegativeButton(getResources().getString(R.string.steps_fragment_reset_data_dialog_cancel_button), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -234,7 +224,6 @@ public class StepsFragment extends Fragment implements SensorEventListener, Step
                         break;
                     default: {
                     }
-
                 }
             }
 

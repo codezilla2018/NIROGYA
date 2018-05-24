@@ -3,10 +3,6 @@ package codezilla.foss.nirogya.helpers;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-/**
- * Created by sonu on 17/01/18.
- */
-
 public class SharedPreferenceManager {
 
     /**
@@ -52,6 +48,7 @@ public class SharedPreferenceManager {
         editor.putString(SCREEN_NAME, screenName);
         editor.apply();
     }
+
     /**
      * @return saved user screen name
      */

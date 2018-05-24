@@ -115,11 +115,11 @@ public class TipsFragment extends Fragment {
                 checkConnection();
             }
         });
-
         return fragment_tips;
     }
+
     protected boolean isOnline() {
-        ConnectivityManager cm = (ConnectivityManager)getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager cm = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
         if (netInfo != null && netInfo.isConnectedOrConnecting()) {
             return true;
@@ -127,11 +127,12 @@ public class TipsFragment extends Fragment {
             return false;
         }
     }
-    public void checkConnection(){
-        if(isOnline()){
+
+    public void checkConnection() {
+        if (isOnline()) {
             Intent intent = new Intent(getActivity(), TwitterLoginActivity.class);
             startActivity(intent);
-        }else{
+        } else {
             Toast.makeText(getActivity(), getResources().getString(R.string.tips_fragment_offline_internet_connection), Toast.LENGTH_SHORT).show();
         }
     }
@@ -140,7 +141,6 @@ public class TipsFragment extends Fragment {
     public void downloadTweets() {
         ConnectivityManager connMgr = (ConnectivityManager) getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-
         if (networkInfo != null && networkInfo.isConnected()) {
             new TipsFragment.DownloadTwitterTask().execute(screenName);
         } else {
@@ -158,34 +158,25 @@ public class TipsFragment extends Fragment {
     }
 
     private void checkDayGap() {
-
         DateFormat dateFormat = new SimpleDateFormat(simpleDateFormat);
         Date date = new Date();
-
         String[] retrievedData = nirogyaDataSource.getAllDataFromTwitterData(defaultTableRowIndexValue);
         String caption = retrievedData[1];
         String dateStart = retrievedData[0];
         String dateStop = dateFormat.format(date);
-
         //HH converts hour in 24 hours format (0-23), day calculation
         SimpleDateFormat format = new SimpleDateFormat(simpleDateFormat);
-
         Date d1 = null;
         Date d2 = null;
-
-
         try {
             d1 = format.parse(dateStart);
             d2 = format.parse(dateStop);
             //in milliseconds
             long diff = d2.getTime() - d1.getTime();
-
             final long diffSeconds = diff / 1000 % 60;
             final long diffMinutes = diff / (60 * 1000) % 60;
             final long diffHours = diff / (60 * 60 * 1000) % 24;
             diffDays = diff / (24 * 60 * 60 * 1000);
-
-
             if (caption == null) {
                 showProgressDialog();
                 downloadTweets();
@@ -204,7 +195,6 @@ public class TipsFragment extends Fragment {
                     final long Minutes = timeDiffer / (60 * 1000) % 60;
                     final long Hours = timeDiffer / (60 * 60 * 1000) % 24;
                     String timeDifference = Hours + " " + hourText + " " + Minutes + " " + minuteText + " " + Seconds + " " + secondText + " ";
-
                     AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), R.style.Theme_Dialog);
                     builder.setTitle(getResources().getString(R.string.tips_fragment_alert_dialog_title))
                             .setMessage(getResources().getString(R.string.tips_fragment_alert_dialog_message) + " " + timeDifference)
@@ -246,7 +236,6 @@ public class TipsFragment extends Fragment {
             Log.e("result", result);
             //   nirogyaDataSource.updateDataTwitterData();
             progressDialog.dismiss();
-
             try {
                 JSONArray jsonArray = new JSONArray(result);
                 JSONObject jsonObject = jsonArray.getJSONObject(0);
@@ -260,7 +249,6 @@ public class TipsFragment extends Fragment {
                 nirogyaDataSource.updateDataTwitterData(defaultTableRowIndexValue, dateNow, caption, description);
                 captionTextView.setText(caption);
                 descriptionTextView.setText(description);
-
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -287,12 +275,9 @@ public class TipsFragment extends Fragment {
                 HttpResponse response = httpClient.execute(request);
                 int statusCode = response.getStatusLine().getStatusCode();
                 String reason = response.getStatusLine().getReasonPhrase();
-
                 if (statusCode == 200) {
-
                     HttpEntity entity = response.getEntity();
                     InputStream inputStream = entity.getContent();
-
                     BufferedReader bReader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"), 8);
                     String line;
                     while ((line = bReader.readLine()) != null) {
@@ -310,20 +295,16 @@ public class TipsFragment extends Fragment {
 
         private String getTwitterStream(String screenName) {
             String results = null;
-
             // Step 1: Encode consumer key and secret
             try {
                 // URL encode the consumer key and secret
                 String urlApiKey = URLEncoder.encode(consumerKey, twitter_data_consumer_key_encode_type);
                 String urlApiSecret = URLEncoder.encode(consumerSecret, twitter_data_consumer_secret_encode_type);
-
                 // Concatenate the encoded consumer key, a colon character, and the
                 // encoded consumer secret
                 String combined = urlApiKey + ":" + urlApiSecret;
-
                 // Base64 encode the string
                 String base64Encoded = Base64.encodeToString(combined.getBytes(), Base64.NO_WRAP);
-
                 // Step 2: Obtain a bearer token
                 HttpPost httpPost = new HttpPost(twitterTokenUrl);
                 httpPost.setHeader(twitter_data_http_post_header1_name, twitter_data_http_post_header1_value + base64Encoded);
@@ -349,5 +330,4 @@ public class TipsFragment extends Fragment {
             return results;
         }
     }
-
 }

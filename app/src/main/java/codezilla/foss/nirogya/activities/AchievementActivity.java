@@ -7,7 +7,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AnticipateInterpolator;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.hookedonplay.decoviewlib.DecoView;
@@ -22,7 +21,6 @@ public class AchievementActivity extends AppCompatActivity {
 
     private Button targetAcheivement;
     private Button bronzeMedal, silverMedal, goldMedal;
-    private LinearLayout silverMedalLayout;
     private TextView targetAchievementPoints;
     private int decoViewBackIndex;
     private int decoViewSeriesIndex1;
@@ -60,10 +58,8 @@ public class AchievementActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_achievement);
-
         nirogyaDataSource = new NirogyaDataSource(AchievementActivity.this);
         nirogyaDataSource.open();
-
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -87,7 +83,6 @@ public class AchievementActivity extends AppCompatActivity {
         bronzeMedal = findViewById(R.id.bronzeMedal);
         silverMedal = findViewById(R.id.silverMedal);
         goldMedal = findViewById(R.id.goldMedal);
-        silverMedalLayout = findViewById(R.id.silverMedalLayout);
         bronzeMedal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 targetAcheivement.setBackgroundResource(R.drawable.activity_achievement_bronze_medal);
@@ -107,7 +102,6 @@ public class AchievementActivity extends AppCompatActivity {
                 targetAcheivement.setBackgroundResource(R.drawable.activity_achievement_gold_medal);
                 targetAcheivement.setText(getResources().getString(R.string.achievement_activity_target_3_text));
                 targetAchievementPoints.setText(getResources().getString(R.string.achievement_activity_target_point_3));
-
             }
         });
     }
@@ -117,7 +111,6 @@ public class AchievementActivity extends AppCompatActivity {
                 .setRange(0, docoviewMax, 0)
                 .setInitialVisibility(true)
                 .build();
-
         decoViewBackIndex = decoView.addSeries(seriesItem);
     }
 
@@ -126,7 +119,6 @@ public class AchievementActivity extends AppCompatActivity {
                 .setRange(0, docoviewMax, 0)
                 .setInitialVisibility(false)
                 .build();
-
         final TextView textPercentage = findViewById(R.id.text_percentage);
         seriesItem.addArcSeriesItemListener(new SeriesItem.SeriesItemListener() {
             @Override
@@ -137,86 +129,69 @@ public class AchievementActivity extends AppCompatActivity {
 
             @Override
             public void onSeriesItemDisplayProgress(float percentComplete) {
-
             }
         });
-
-
         final TextView textToGo = findViewById(R.id.text_remaining);
         seriesItem.addArcSeriesItemListener(new SeriesItem.SeriesItemListener() {
             @Override
             public void onSeriesItemAnimationProgress(float percentComplete, float currentPosition) {
                 textToGo.setText(String.format(textToGoPrefix, seriesItem.getMaxValue() - currentPosition));
-
             }
 
             @Override
             public void onSeriesItemDisplayProgress(float percentComplete) {
-
             }
         });
-
         seriesItem.addArcSeriesItemListener(new SeriesItem.SeriesItemListener() {
             @Override
             public void onSeriesItemAnimationProgress(float percentComplete, float currentPosition) {
             }
+
             @Override
             public void onSeriesItemDisplayProgress(float percentComplete) {
-
             }
         });
-
         decoViewSeriesIndex1 = decoView.addSeries(seriesItem);
     }
 
     private void createEvents() {
         decoView.executeReset();
-
         decoView.addEvent(new DecoEvent.Builder(docoviewMax)
                 .setIndex(decoViewBackIndex)
                 .setDuration(decoviewEvent1Duration)
                 .setDelay(decoviewEvent1Delay)
                 .build());
-
         decoView.addEvent(new DecoEvent.Builder(DecoDrawEffect.EffectType.EFFECT_SPIRAL_OUT)
                 .setIndex(decoViewSeriesIndex1)
                 .setDuration(decoviewEvent2Duration)
                 .setDelay(decoviewEvent2Delay)
                 .build());
-
         decoView.addEvent(new DecoEvent.Builder(currentStepCount)
                 .setIndex(decoViewSeriesIndex1)
                 .setDelay(decoviewEvent3Delay)
                 .build());
-
         decoView.addEvent(new DecoEvent.Builder(DecoDrawEffect.EffectType.EFFECT_SPIRAL_OUT)
                 .setIndex(decoViewSeriesIndex2)
                 .setDuration(decoviewEvent4Duration)
                 .setEffectRotations(1)
                 .setDelay(decoviewEvent4Delay)
                 .build());
-
         decoView.addEvent(new DecoEvent.Builder(decoviewEvent5EndPosition)
                 .setIndex(decoViewSeriesIndex2)
                 .setDelay(decoviewEvent5Delay)
                 .build());
-
         decoView.addEvent(new DecoEvent.Builder(DecoDrawEffect.EffectType.EFFECT_SPIRAL_OUT)
                 .setIndex(decoViewSeriesIndex3)
                 .setDuration(decoviewEvent6Duration)
                 .setEffectRotations(1)
                 .setDelay(decoviewEvent6Delay)
                 .build());
-
         decoView.addEvent(new DecoEvent.Builder(decoviewEvent9EndPosition)
                 .setIndex(decoViewSeriesIndex3).setDelay(decoviewEvent9Delay).build());
-
         decoView.addEvent(new DecoEvent.Builder(0)
                 .setIndex(decoViewSeriesIndex3).setDelay(decoviewEvent10Delay).build());
-
         decoView.addEvent(new DecoEvent.Builder(0)
                 .setIndex(decoViewSeriesIndex2).setDelay(decoviewEvent11Delay).build());
-
         decoView.addEvent(new DecoEvent.Builder(0)
                 .setIndex(decoViewSeriesIndex1)
                 .setDelay(decoviewEvent7Delay)
@@ -225,7 +200,6 @@ public class AchievementActivity extends AppCompatActivity {
                 .setListener(new DecoEvent.ExecuteEventListener() {
                     @Override
                     public void onEventStart(DecoEvent decoEvent) {
-
                     }
 
                     @Override
@@ -234,7 +208,6 @@ public class AchievementActivity extends AppCompatActivity {
                     }
                 })
                 .build());
-
         decoView.addEvent(new DecoEvent.Builder(DecoDrawEffect.EffectType.EFFECT_SPIRAL_EXPLODE)
                 .setIndex(decoViewSeriesIndex1)
                 .setDelay(decoviewEvent8Delay)
@@ -243,7 +216,6 @@ public class AchievementActivity extends AppCompatActivity {
                 .setListener(new DecoEvent.ExecuteEventListener() {
                     @Override
                     public void onEventStart(DecoEvent decoEvent) {
-
                     }
 
                     @Override
@@ -252,7 +224,6 @@ public class AchievementActivity extends AppCompatActivity {
                     }
                 })
                 .build());
-
         resetText();
     }
 

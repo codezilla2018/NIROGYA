@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
+
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
 import com.twitter.sdk.android.core.TwitterException;
@@ -28,7 +29,6 @@ public class TimelineActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
-
         setUpSwipeRefreshLayout();
         setUpRecyclerView();
         loadUserTimeline();
@@ -45,7 +45,6 @@ public class TimelineActivity extends AppCompatActivity {
      */
     private void loadUserTimeline() {
         SharedPreferenceManager sharedPreferenceManager = new SharedPreferenceManager(TimelineActivity.this);
-
         //build UserTimeline
         UserTimeline userTimeline = new UserTimeline.Builder()
                 .userId(sharedPreferenceManager.getUserId())//User ID of the user to show tweets for
@@ -54,7 +53,6 @@ public class TimelineActivity extends AppCompatActivity {
                 .includeRetweets(true)//Whether to include re-tweets. Defaults to true.
                 .maxItemsPerRequest(50)//Max number of items to return per request
                 .build();
-
         //build adapter for recycler view
         adapter = new TweetTimelineRecyclerViewAdapter.Builder(TimelineActivity.this)
                 .setTimeline(userTimeline)//set the created timeline
@@ -73,26 +71,21 @@ public class TimelineActivity extends AppCompatActivity {
                 //set tweet view style
                 .setViewStyle(R.style.tw__TweetLightWithActionsStyle)
                 .build();
-
         //finally set the created adapter to recycler view
         userTimelineRecyclerView.setAdapter(adapter);
     }
 
 
     private void setUpSwipeRefreshLayout() {
-
         //find the id of swipe refresh layout
         swipeRefreshLayout = findViewById(R.id.user_swipe_refresh_layout);
-
         //implement refresh listener
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-
                 //return if adapter is null
                 if (adapter == null)
                     return;
-
                 //make set refreshing true
                 swipeRefreshLayout.setRefreshing(true);
                 adapter.refresh(new Callback<TimelineResult<Tweet>>() {

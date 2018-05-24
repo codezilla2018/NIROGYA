@@ -29,7 +29,6 @@ public class InstructionsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_instructions);
-
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -81,7 +80,6 @@ public class InstructionsActivity extends Activity {
     private void prepareListData() {
         listDataHeader = new ArrayList<>();
         listDataChild = new HashMap<>();
-
         // Adding header data
         listDataHeader.add(getResources().getString(R.string.instructions_activity_header_1));
         listDataHeader.add(getResources().getString(R.string.instructions_activity_header_2));
@@ -93,7 +91,6 @@ public class InstructionsActivity extends Activity {
         listDataHeader.add(getResources().getString(R.string.instructions_activity_header_8));
         listDataHeader.add(getResources().getString(R.string.instructions_activity_header_9));
         listDataHeader.add(getResources().getString(R.string.instructions_activity_header_10));
-
         // Adding child data
         List<String> instruction1 = new ArrayList<>();
         instruction1.add(getResources().getString(R.string.instructions_activity_header_1_child_data));
@@ -115,7 +112,6 @@ public class InstructionsActivity extends Activity {
         instruction9.add(getResources().getString(R.string.instructions_activity_header_9_child_data));
         List<String> instruction10 = new ArrayList<>();
         instruction10.add(getResources().getString(R.string.instructions_activity_header_10_child_data));
-
         listDataChild.put(listDataHeader.get(0), instruction1);
         listDataChild.put(listDataHeader.get(1), instruction2);
         listDataChild.put(listDataHeader.get(2), instruction3);
@@ -126,6 +122,5 @@ public class InstructionsActivity extends Activity {
         listDataChild.put(listDataHeader.get(7), instruction8);
         listDataChild.put(listDataHeader.get(8), instruction9);
         listDataChild.put(listDataHeader.get(9), instruction10);
-
     }
 }
