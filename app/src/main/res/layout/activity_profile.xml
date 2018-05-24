@@ -6,38 +6,36 @@
     android:layout_height="match_parent"
     android:background="@drawable/activity_profile_background"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="@dimen/activity_profile_padding"
     tools:context="codezilla.foss.nirogya.activities.ProfileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="@dimen/activity_profile_linear_layout_margin_bottom"
+        android:layout_marginTop="@dimen/activity_profile_linear_layout_margin_top"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/header_name"
+            android:text="@string/activity_profile_header_name"
             android:textColor="@color/activity_profile_header_color"
-            android:textSize="30sp" />
-
+            android:textSize="@dimen/activity_profile_header_name_text_size" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/activity_profile_description_name_margin_top"
             android:gravity="center"
-            android:text="@string/description_name"
+            android:text="@string/activity_profile_description_name"
             android:textColor="@color/activity_profile_decription_name_text_color" />
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/activity_profile_parent_weight_and_height_layout_margin_top"
             android:gravity="center"
             android:orientation="vertical"
             android:weightSum="2">
@@ -53,14 +51,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/height_caption"
+                    android:text="@string/activity_profile_height_caption"
                     android:textColor="@color/activity_profile_height_caption_text_color" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/activity_profile_parent_height_layout_margin_top"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -68,18 +66,17 @@
                         android:id="@+id/height_choice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/height_default_value"
+                        android:text="@string/activity_profile_height_default_value"
                         android:textColor="@color/activity_profile_height_value_text_color"
-                        android:textSize="20dp" />
+                        android:textSize="@dimen/activity_profile_height_choice_text_size" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="@dimen/activity_profile_height_choice_drop_down_left_margin"
                         android:src="@drawable/drop_down" />
 
                 </LinearLayout>
-
 
             </LinearLayout>
 
@@ -94,14 +91,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/weight_caption"
+                    android:text="@string/activity_profile_weight_caption"
                     android:textColor="@color/activity_profile_weight_caption_text_color" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/activity_profile_parent_weight_layout_margin_top"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -109,15 +106,15 @@
                         android:id="@+id/weight_choice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/weight_defaut_value"
+                        android:text="@string/activity_profile_weight_defaut_value"
                         android:textColor="@color/activity_profile_weight_value_text_color"
-                        android:textSize="20dp" />
+                        android:textSize="@dimen/activity_profile_weight_choice_text_size" />
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="@dimen/activity_profile_weight_choice_drop_down_left_margin"
                         android:src="@drawable/drop_down" />
                 </LinearLayout>
 
@@ -130,13 +127,12 @@
     <Button
         android:id="@+id/next_button"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="-80dp"
+        android:layout_height="@dimen/activity_profile_next_button_height"
+        android:layout_marginTop="@dimen/activity_profile_next_button_margin_top"
         android:background="@drawable/default_next_button_shape"
-        android:text="@string/next_button_display_text"
+        android:text="@string/activity_profile_next_button_display_text"
         android:textColor="@color/activity_profile_next_button_text_color"
-        android:textSize="20dp"
+        android:textSize="@dimen/activity_profile_next_button_text_size"
         android:visibility="visible" />
-
 
 </LinearLayout>

@@ -37,6 +37,25 @@
     <!--activity_privacy_policy.xml-->
     <color name="activity_privacy_policy_text_color">#ffffff</color>
 
+    <!--activity_profile.xml-->
+    <color name="activity_profile_background_color">#1a237e</color>
+    <color name="activity_profile_header_color">#54C571</color>
+    <color name="activity_profile_decription_name_text_color">#ffffff</color>
+    <color name="activity_profile_height_caption_text_color">#ffffff</color>
+    <color name="activity_profile_weight_caption_text_color">#ffffff</color>
+    <color name="activity_profile_height_value_text_color">#ffffff</color>
+    <color name="activity_profile_weight_value_text_color">#ffffff</color>
+    <color name="activity_profile_next_button_text_color">#ffffff</color>
+
+
+    <!--activity_profile_height_selector.xml-->
+    <color name="activity_profile_height_selector_background_color">#ffffff</color>
+    <color name="activity_profile_height_selector_topic_color">#140078</color>
+
+    <!--activity_profile_weight_selector.xml-->
+    <color name="activity_profile_weight_selector_background_color">#ffffff</color>
+    <color name="activity_profile_weight_selector_topic_color">#140078</color>
+
 
     <color name="white_trans">#99FFFFFF</color>
 
@@ -54,28 +73,10 @@
     <color name="activity_select_gender_next_button_text_color">#ffffff</color>
 
 
-    <!--activity_profile.xml-->
-    <color name="activity_profile_background_color">#1a237e</color>
-    <color name="activity_profile_header_color">#54C571</color>
-    <color name="activity_profile_decription_name_text_color">#ffffff</color>
-    <color name="activity_profile_height_caption_text_color">#ffffff</color>
-    <color name="activity_profile_weight_caption_text_color">#ffffff</color>
-    <color name="activity_profile_height_value_text_color">#ffffff</color>
-    <color name="activity_profile_weight_value_text_color">#ffffff</color>
-    <color name="activity_profile_next_button_text_color">#ffffff</color>
-
     <!--achievement_activity-->
     <color name="achievement_activity_doco_view_color_1">#3bf92a</color>
     <color name="achievement_activity_doco_view_color_2">#f9f004</color>
 
-
-    <!--activity_profile_height_selector.xml-->
-    <color name="activity_profile_height_selector_background_color">#ffffff</color>
-    <color name="activity_profile_height_selector_topic_color">#140078</color>
-
-    <!--activity_profile_weight_selector.xml-->
-    <color name="activity_profile_weight_selector_background_color">#ffffff</color>
-    <color name="activity_profile_weight_selector_topic_color">#140078</color>
 
     <!--fragment_settings.xml-->
     <color name="fragment_settings_background_color">#534bae</color>

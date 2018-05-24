@@ -46,6 +46,31 @@ I want to inform users of this Service that these third parties have access to y
     <string name="activity_privacy_policy_value_10">If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me.</string>
 
 
+    <!--activity_profile.xml-->
+    <string name="activity_profile_header_name">My Profile</string>
+    <string name="activity_profile_description_name">To ensure the accuracy, please input your accurate information. We never share them with third parties.</string>
+    <string name="activity_profile_height_caption">Height</string>
+    <string name="activity_profile_weight_caption">Weight</string>
+    <string name="activity_profile_height_default_value">170 cm</string>
+    <string name="activity_profile_weight_defaut_value">70.0 kg</string>
+    <string name="activity_profile_next_button_display_text">NEXT</string>
+
+    <!--activity_profile_height_selector.xml-->
+    <string name="activity_profile_height_selector_topic">Height</string>
+    <string name="activity_profile_height_selector_sub_topic">Distance &amp; speed calculation needs it</string>
+    <string name="activity_profile_height_selector_unit">cm</string>
+    <string name="activity_profile_height_selector_ok_button">OK</string>
+    <string name="activity_profile_height_selector_cancel_button">CANCEL</string>
+
+
+    <!--activity_profile_weight_selector.xml-->
+    <string name="activity_profile_weight_selector_topic">Weight</string>
+    <string name="activity_profile_weight_selector_sub_topic">Distance &amp; speed calculation needs it</string>
+    <string name="activity_profile_weight_selector_unit">kg</string>
+    <string name="activity_profile_weight_selector_ok_button">OK</string>
+    <string name="activity_profile_weight_selector_cancel_button">CANCEL</string>
+
+
     <!--activity_select_gender.xml-->
     <string name="activity_select_gender_main_caption_text">Select Gender</string>
     <string name="activity_select_gender_sub_heading_text">Calories &amp; stride length calcaultion needs it.</string>
@@ -59,14 +84,6 @@ I want to inform users of this Service that these third parties have access to y
     <string name="profile_activity_ok_button_text">YES</string>
 
 
-    <!--activity_profile.xml-->
-    <string name="header_name">My Profile</string>
-    <string name="description_name">To ensure the accuracy, please input your accurate information. We never share them with third parties.</string>
-    <string name="height_caption">Height</string>
-    <string name="weight_caption">Weight</string>
-    <string name="height_default_value">170 cm</string>
-    <string name="weight_defaut_value">70.0 kg</string>
-    <string name="next_button_display_text">NEXT</string>
 
 
     <!--InstructionsActivity-->
@@ -109,19 +126,7 @@ I want to inform users of this Service that these third parties have access to y
 
 
 
-    <!--activity_profile_height_selector.xml-->
-    <string name="activity_profile_height_selector_topic">Height</string>
-    <string name="activity_profile_height_selector_sub_topic">Distance &amp; speed calculation needs it</string>
-    <string name="activity_profile_height_selector_unit">cm</string>
-    <string name="activity_profile_height_selector_ok_button">OK</string>
-    <string name="activity_profile_height_selector_cancel_button">CANCEL</string>
 
-    <!--activity_profile_weight_selector.xml-->
-    <string name="activity_profile_weight_selector_topic">Weight</string>
-    <string name="activity_profile_weight_selector_sub_topic">Distance &amp; speed calculation needs it</string>
-    <string name="activity_profile_weight_selector_unit">kg</string>
-    <string name="activity_profile_weight_selector_ok_button">OK</string>
-    <string name="activity_profile_weight_selector_cancel_button">CANCEL</string>
 
     <!--fragment_settings.xml-->
     <string name="fragment_settings_heading_1">Step Goal</string>

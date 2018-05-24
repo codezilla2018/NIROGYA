@@ -72,5 +72,35 @@
     <dimen name="activity_privacy_policy_header_10_margin_top">5dp</dimen>
     <dimen name="activity_privacy_policy_value_10_margin_top">5dp</dimen>
 
+    <!--activity_profile.xml-->
+    <dimen name="activity_profile_padding">10dp</dimen>
+    <dimen name="activity_profile_linear_layout_margin_bottom">100dp</dimen>
+    <dimen name="activity_profile_linear_layout_margin_top">50dp</dimen>
+    <dimen name="activity_profile_header_name_text_size">30sp</dimen>
+    <dimen name="activity_profile_description_name_margin_top">10dp</dimen>
+    <dimen name="activity_profile_parent_weight_and_height_layout_margin_top">20dp</dimen>
+    <dimen name="activity_profile_parent_height_layout_margin_top">10dp</dimen>
+    <dimen name="activity_profile_height_choice_text_size">20dp</dimen>
+    <dimen name="activity_profile_height_choice_drop_down_left_margin">10dp</dimen>
+    <dimen name="activity_profile_parent_weight_layout_margin_top">10dp</dimen>
+    <dimen name="activity_profile_weight_choice_text_size">20dp</dimen>
+    <dimen name="activity_profile_weight_choice_drop_down_left_margin">10dp</dimen>
+    <dimen name="activity_profile_next_button_height">60dp</dimen>
+    <dimen name="activity_profile_next_button_margin_top">-80dp</dimen>
+    <dimen name="activity_profile_next_button_text_size">20dp</dimen>
+
+    <!--activity_profile_height_selector.xml-->
+    <dimen name="activity_profile_height_selector_padding">20dp</dimen>
+    <dimen name="activity_profile_height_selector_topic_text_size">20dp</dimen>
+    <dimen name="activity_profile_height_selector_sub_topic_margin_top">10dp</dimen>
+    <dimen name="activity_profile_height_selector_unit_margin_left">20dp</dimen>
+    <dimen name="activity_profile_height_selector_bottom_layout_margin_top">10dp</dimen>
+
+    <!--activity_profile_weight_selector.xml-->
+    <dimen name="activity_profile_weight_selector_padding">20dp</dimen>
+    <dimen name="activity_profile_weight_selector_topic_text_size">20dp</dimen>
+    <dimen name="activity_profile_weight_selector_sub_topic_margin_top">10dp</dimen>
+    <dimen name="activity_profile_weight_selector_unit_margin_left">20dp</dimen>
+    <dimen name="activity_profile_weight_selector_bottom_layout_margin_top">10dp</dimen>
 
 </resources>

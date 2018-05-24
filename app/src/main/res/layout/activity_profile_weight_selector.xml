@@ -4,20 +4,20 @@
     android:layout_height="wrap_content"
     android:background="@color/activity_profile_weight_selector_background_color"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="@dimen/activity_profile_weight_selector_padding">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/activity_profile_weight_selector_topic"
         android:textColor="@color/activity_profile_weight_selector_topic_color"
-        android:textSize="20dp"
+        android:textSize="@dimen/activity_profile_weight_selector_topic_text_size"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/activity_profile_weight_selector_sub_topic_margin_top"
         android:text="@string/activity_profile_weight_selector_sub_topic"
         android:textColor="@color/primaryColor" />
 
@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/activity_profile_weight_selector_unit_margin_left"
             android:text="@string/activity_profile_weight_selector_unit"
             android:textColor="@color/primaryColor"
             android:textStyle="bold" />
@@ -46,7 +46,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/activity_profile_weight_selector_bottom_layout_margin_top"
         android:gravity="right"
         android:orientation="horizontal">
 
