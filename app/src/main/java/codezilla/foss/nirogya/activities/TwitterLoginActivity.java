@@ -1,9 +1,6 @@
 package codezilla.foss.nirogya.activities;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +17,7 @@ import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
 import codezilla.foss.nirogya.R;
-import codezilla.foss.nirogya.helper.SharedPreferenceManager;
+import codezilla.foss.nirogya.helpers.SharedPreferenceManager;
 
 public class TwitterLoginActivity extends AppCompatActivity {
 

@@ -1,6 +1,5 @@
 package codezilla.foss.nirogya.activities;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -16,7 +15,7 @@ import com.twitter.sdk.android.tweetui.TweetTimelineRecyclerViewAdapter;
 import com.twitter.sdk.android.tweetui.UserTimeline;
 
 import codezilla.foss.nirogya.R;
-import codezilla.foss.nirogya.helper.SharedPreferenceManager;
+import codezilla.foss.nirogya.helpers.SharedPreferenceManager;
 
 
 public class TimelineActivity extends AppCompatActivity {

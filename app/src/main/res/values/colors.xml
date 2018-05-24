@@ -10,6 +10,19 @@
     <color name="primaryDarkColor">#140078</color>
     <color name="primaryTextColor">#ffffff</color>
 
+    <!--activity_achievement.xml-->
+    <color name="activity_achievement_selected_medel_caption_default_color">#ffffff</color>
+    <color name="activity_achievement_selected_medel_caption_steps_text">#ffffff</color>
+    <color name="activity_achievement_bronze_medal_text_color">#ffffff</color>
+    <color name="activity_achievement_silver_medal_text_color">#ffffff</color>
+    <color name="activity_achievement_gold_medal_text_color">#ffffff</color>
+    <color name="activity_achievement_text_percentage_text_color">#ffffff</color>
+    <color name="activity_achievement_text_remaining_text_color">#ffffff</color>
+    <color name="activity_achievement_bronze_medal_button_text_color">#ffffff</color>
+    <color name="activity_achievement_target_achievement_button_text_color">#ffffff</color>
+    <color name="activity_achievement_silver_medal_button_text_color">#ffffff</color>
+    <color name="activity_achievement_gold_medal_button_text_color">#ffffff</color>
+
 
     <color name="white_trans">#99FFFFFF</color>
 
@@ -41,14 +54,6 @@
     <color name="achievement_activity_doco_view_color_1">#3bf92a</color>
     <color name="achievement_activity_doco_view_color_2">#f9f004</color>
 
-    <!--activity_achievement.xml-->
-    <color name="activity_achievement_selected_medel_caption_default_color">#ffffff</color>
-    <color name="activity_achievement_selected_medel_caption_steps_text">#ffffff</color>
-    <color name="activity_achievement_bronze_medal_text_color">#ffffff</color>
-    <color name="activity_achievement_silver_medal_text_color">#ffffff</color>
-    <color name="activity_achievement_gold_medal_text_color">#ffffff</color>
-    <color name="activity_achievement_text_percentage_text_color">#ffffff</color>
-    <color name="activity_achievement_text_remaining_text_color">#ffffff</color>
 
     <!--activity_instructions.xml-->
     <color name="activity_instructions_cache_color_hint">#000000</color>

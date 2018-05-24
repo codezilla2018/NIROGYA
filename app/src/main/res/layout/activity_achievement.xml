@@ -11,30 +11,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/activity_achievement_linear_layout_margin_top"
+        android:gravity="center"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/targetAchievement"
-            android:layout_width="@dimen/activity_achievement_bronze_medal_button_width"
-            android:layout_height="@dimen/activity_achievement_bronze_medal_button_height"
+            android:layout_width="@dimen/activity_achievement_target_achievement_button_width"
+            android:layout_height="@dimen/activity_achievement_target_achievement_button_height"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/activity_achievement_bronze_medal_button_margin_top"
-            android:text="Bronze Medal"
-            android:textColor="#ffffff"
-            android:textSize="@dimen/activity_achievement_bronze_medal_button_text_size"
+            android:layout_marginTop="@dimen/activity_achievement_target_achievement_button_margin_top"
+            android:background="@drawable/activity_achievement_bronze_medal"
             android:gravity="center"
-            android:background="@drawable/activity_achievement_bronze_medal" />
+            android:text="@string/activity_achievement_target_achievement_button_text"
+            android:textColor="@color/activity_achievement_target_achievement_button_text_color"
+            android:textSize="@dimen/activity_achievement_target_achievement_button_text_size" />
 
         <TextView
             android:id="@+id/targetAchievementPoints"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/activity_achievement_target_achievement_points_margin_top"
             android:text="@string/activity_achievement_selected_medel_caption_default_text"
             android:textColor="@color/activity_achievement_selected_medel_caption_default_color"
-            android:textSize="20dp" />
+            android:textSize="@dimen/activity_achievement_target_achievement_points_text_size" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
             android:layout_gravity="center"
             android:text="@string/activity_achievement_selected_medel_caption_steps_text"
             android:textColor="@color/activity_achievement_selected_medel_caption_steps_text"
-            android:textSize="15dp" />
+            android:textSize="@dimen/activity_achievement_steps_text_size" />
 
 
         <LinearLayout
@@ -60,11 +60,11 @@
 
                 <com.hookedonplay.decoviewlib.DecoView xmlns:custom="http://schemas.android.com/apk/res-auto"
                     android:id="@+id/dynamicArcView"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/activity_achievement_decoview_width"
+                    android:layout_height="@dimen/activity_achievement_decoview_height"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    custom:dv_lineWidth="20dp"></com.hookedonplay.decoviewlib.DecoView>
+                    custom:dv_lineWidth="@dimen/activity_achievement_decoview_line_width"></com.hookedonplay.decoviewlib.DecoView>
             </LinearLayout>
 
             <LinearLayout
@@ -81,9 +81,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:textColor="@color/activity_achievement_text_percentage_text_color"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textSize="40sp" />
+                    android:textColor="@color/activity_achievement_text_percentage_text_color"
+                    android:textSize="@dimen/activity_achievement_text_percentage_text_size" />
 
                 <TextView
                     android:id="@+id/text_remaining"
@@ -91,19 +91,18 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:textColor="@color/activity_achievement_text_remaining_text_color"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/activity_achievement_text_remaining_text_color" />
 
 
             </LinearLayout>
 
         </LinearLayout>
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="@dimen/activity_achievement_medals_horizontal_linear_layout_margin_top"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -115,19 +114,19 @@
 
                 <Button
                     android:id="@+id/bronzeMedal"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/activity_achievement_bronze_medal_button_width"
+                    android:layout_height="@dimen/activity_achievement_bronze_medal_button_height"
                     android:layout_gravity="center"
-                    android:text="Bronze Medal"
-                    android:textColor="#ffffff"
-                    android:textSize="10dp"
+                    android:background="@drawable/activity_achievement_bronze_medal"
                     android:gravity="center"
-                    android:background="@drawable/activity_achievement_bronze_medal" />
+                    android:text="@string/activity_achievement_bronze_medal_button_text"
+                    android:textColor="@color/activity_achievement_bronze_medal_button_text_color"
+                    android:textSize="@dimen/activity_achievement_bronze_medal_button_text_size" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/activity_achievement_bronze_medal_margin_top"
                     android:gravity="center"
                     android:text="@string/activity_achievement_bronze_medal_text"
                     android:textColor="@color/activity_achievement_bronze_medal_text_color" />
@@ -142,19 +141,19 @@
 
                 <Button
                     android:id="@+id/silverMedal"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/activity_achievement_silver_medal_button_width"
+                    android:layout_height="@dimen/activity_achievement_silver_medal_button_height"
                     android:layout_gravity="center"
-                    android:text="Silver Medal"
-                    android:textColor="#ffffff"
-                    android:textSize="10dp"
+                    android:background="@drawable/activity_achievement_silver_medal"
                     android:gravity="center"
-                    android:background="@drawable/activity_achievement_silver_medal" />
+                    android:text="@string/activity_achievement_silver_medal_button_text"
+                    android:textColor="@color/activity_achievement_silver_medal_button_text_color"
+                    android:textSize="@dimen/activity_achievement_silver_medal_button_text_size" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/activity_achievement_silver_medal_margin_top"
                     android:gravity="center"
                     android:text="@string/activity_achievement_silver_medal_text"
                     android:textColor="@color/activity_achievement_silver_medal_text_color" />
@@ -168,19 +167,19 @@
 
                 <Button
                     android:id="@+id/goldMedal"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="@dimen/activity_achievement_gold_medal_button_width"
+                    android:layout_height="@dimen/activity_achievement_gold_medal_button_height"
                     android:layout_gravity="center"
-                    android:text="Gold Medal"
-                    android:textColor="#ffffff"
-                    android:textSize="10dp"
+                    android:background="@drawable/activity_achievement_gold_medal"
                     android:gravity="center"
-                    android:background="@drawable/activity_achievement_gold_medal" />
+                    android:text="@string/activity_achievement_gold_medal_button_text"
+                    android:textColor="@color/activity_achievement_gold_medal_button_text_color"
+                    android:textSize="@dimen/activity_achievement_gold_medal_button_text_size" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="@dimen/activity_achievement_gold_medal_margin_top"
                     android:gravity="center"
                     android:text="@string/activity_achievement_gold_medal_text"
                     android:textColor="@color/activity_achievement_gold_medal_text_color" />

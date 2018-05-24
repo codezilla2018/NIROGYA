@@ -4,6 +4,17 @@
     <!--activity_splash_screen-->
     <string name="app_heading">NIROGYA</string>
 
+    <!--activity_achievement.xml-->
+    <string name="activity_achievement_selected_medel_caption_default_text">10000</string>
+    <string name="activity_achievement_selected_medel_caption_steps_text">Steps</string>
+    <string name="activity_achievement_bronze_medal_text">10000 Steps</string>
+    <string name="activity_achievement_silver_medal_text">20000 Steps</string>
+    <string name="activity_achievement_gold_medal_text">30000 Steps</string>
+    <string name="activity_achievement_bronze_medal_button_text">Bronze Medal</string>
+    <string name="activity_achievement_target_achievement_button_text">Bronze Medal</string>
+    <string name="activity_achievement_silver_medal_button_text">Silver Medal</string>
+    <string name="activity_achievement_gold_medal_button_text">Gold Medal</string>
+
     <!--activity_select_gender.xml-->
     <string name="activity_select_gender_main_caption_text">Select Gender</string>
     <string name="activity_select_gender_sub_heading_text">Calories &amp; stride length calcaultion needs it.</string>
@@ -25,13 +36,6 @@
     <string name="height_default_value">170 cm</string>
     <string name="weight_defaut_value">70.0 kg</string>
     <string name="next_button_display_text">NEXT</string>
-
-    <!--activity_achievement.xml-->
-    <string name="activity_achievement_selected_medel_caption_default_text">10000</string>
-    <string name="activity_achievement_selected_medel_caption_steps_text">Steps</string>
-    <string name="activity_achievement_bronze_medal_text">10000 Steps</string>
-    <string name="activity_achievement_silver_medal_text">20000 Steps</string>
-    <string name="activity_achievement_gold_medal_text">30000 Steps</string>
 
 
     <!--InstructionsActivity-->

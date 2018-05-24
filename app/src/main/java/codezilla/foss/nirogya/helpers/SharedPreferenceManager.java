@@ -1,4 +1,4 @@
-package codezilla.foss.nirogya.helper;
+package codezilla.foss.nirogya.helpers;
 
 import android.content.Context;
 import android.content.SharedPreferences;
