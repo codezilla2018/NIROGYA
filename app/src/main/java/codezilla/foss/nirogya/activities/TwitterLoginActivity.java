@@ -22,8 +22,6 @@ import codezilla.foss.nirogya.helpers.SharedPreferenceManager;
 
 public class TwitterLoginActivity extends AppCompatActivity {
 
-//    private String consumerKey = "Rwcb00iF2za9fN5HPAlGQMHKn";
-//    private String consumerSecret = "e1ALoPlLROpnMiNGygL2ry6LwUupe1atkJjqoLARQkHSG7hYyC";
     private String consumerKey = "nW88XLuFSI9DEfHOX2tpleHbR";
     private String consumerSecret = "hCg3QClZ1iLR13D3IeMvebESKmakIelp4vwFUICuj6HAfNNCer";
     private String screenName = "nirogya";
@@ -62,17 +60,17 @@ public class TwitterLoginActivity extends AppCompatActivity {
                     //after saving start main activity
                     startMainActivity();
                     //show toast
-                    Toast.makeText(TwitterLoginActivity.this, "Login Successful.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TwitterLoginActivity.this, getResources().getString(R.string.twitter_login_activity_successful_login_message), Toast.LENGTH_SHORT).show();
                 } else {
                     //if twitter session is null due to some reason then show error toast
-                    Toast.makeText(TwitterLoginActivity.this, "Failed to do Login. Please try again.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(TwitterLoginActivity.this, getResources().getString(R.string.twitter_login_activity_unsuccessful_login_message), Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void failure(TwitterException exception) {
                 // Do something on failure
-                Toast.makeText(TwitterLoginActivity.this, "Failed to do Login. Please try again.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(TwitterLoginActivity.this, getResources().getString(R.string.twitter_login_activity_unsuccessful_login_message), Toast.LENGTH_SHORT).show();
             }
         });
     }

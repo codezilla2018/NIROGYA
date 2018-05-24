@@ -93,13 +93,13 @@ public class TimelineActivity extends AppCompatActivity {
                     public void success(Result<TimelineResult<Tweet>> result) {
                         //on success response make refreshing false
                         swipeRefreshLayout.setRefreshing(false);
-                        Toast.makeText(TimelineActivity.this, "Tweets refreshed.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TimelineActivity.this, getResources().getString(R.string.timeline_activity_twitter_refreshed_message), Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
                     public void failure(TwitterException exception) {
                         // Toast or some other action
-                        Toast.makeText(TimelineActivity.this, "Failed to refresh tweets.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TimelineActivity.this, getResources().getString(R.string.timeline_activity_twitter_failed_refreshed_message), Toast.LENGTH_SHORT).show();
                     }
                 });
             }

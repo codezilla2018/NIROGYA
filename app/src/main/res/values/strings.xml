@@ -211,4 +211,13 @@ I want to inform users of this Service that these third parties have access to y
     <string name="item_2">TIPS</string>
     <string name="item_3">MORE</string>
 
+    <!--TimelineActivity-->
+    <string name="timeline_activity_twitter_refreshed_message">Tweets refreshed.</string>
+    <string name="timeline_activity_twitter_failed_refreshed_message">Failed to refresh tweets.</string>
+
+    <!--TwitterLoginActivity-->
+    <string name="twitter_login_activity_successful_login_message">Login Successful.</string>
+    <string name="twitter_login_activity_unsuccessful_login_message">Failed to do Login. Please try again.</string>
+
+
 </resources>
