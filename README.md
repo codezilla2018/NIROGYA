@@ -49,6 +49,8 @@
      <tr>
     <th><img src="screenshots/s21.png" alt="loading screenshot"  width="200" height="320"</th>
     <th><img src="screenshots/s22.png" alt="loading screenshot"  width="200" height="320"</th> 
+    <th><img src="screenshots/s23.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/s24.png" alt="loading screenshot"  width="200" height="320"</th> 
    </tr>
 </table>
 <h2>Features</h2>
