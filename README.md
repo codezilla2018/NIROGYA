@@ -80,6 +80,7 @@
 <li>bronze medal 10000 steps</li>
 <li>silver medal 20000 steps</li>
 <li>gold medal 30000 steps</li>
+<p>App will show remaning steps to your nearest target</p>
 <p>Earn three medals and live healthily.</p>
 </ul>
 <li>You can reset all steps and related information by clicking on the green button.</li>
@@ -88,6 +89,7 @@
 <li>click on the middle tab of the bottom navigation bar</li>
 </ul>
 <p>It will show the daily health tips from twitter stream. Here I have created a twitter page -https://twitter.com/nirogya. Each day nirogya twitter page will be updated with new health tips. Android application will automatically link to that twitter page and day by day it will show the recent health tips. After loading a particular health tip from twitter nirogya page, the app will count down the remaining time to appear the next health tips. </p>
+<P>If someone wants to see the niroga twitter timeline, anytime he/she can see the twitter timeline by clicking on the "view more" button. First time, user has to sign in with personal twitter account through this application. After that any time,user will be redirected to the nirogya timeline soon.
 <ul>
 <li>Click on the tab "MORE" of the bottom navigation bar. This is more than a setting page</li>
 <ul>
