@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/activity_privacy_policy_background"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="@dimen/activity_privacy_policy_padding"
     tools:context="codezilla.foss.nirogya.activities.PrivacyPolicyActivity">
 
     <LinearLayout
@@ -21,13 +21,13 @@
             android:text="@string/activity_privacy_policy_header_1"
             android:textAlignment="center"
             android:textColor="@color/activity_privacy_policy_text_color"
-            android:textSize="25dp"
+            android:textSize="@dimen/activity_privacy_policy_header_1_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_value_1_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_value_1"
             android:textAlignment="center"
@@ -40,13 +40,13 @@
             android:text="@string/activity_privacy_policy_header_2"
             android:textAlignment="center"
             android:textColor="@color/activity_privacy_policy_text_color"
-            android:textSize="20dp"
+            android:textSize="@dimen/activity_privacy_policy_header_2_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_value_2_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_value_2"
             android:textAlignment="center"
@@ -55,18 +55,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_header_3_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_header_3"
             android:textAlignment="center"
             android:textColor="@color/activity_privacy_policy_text_color"
-            android:textSize="20dp"
+            android:textSize="@dimen/activity_privacy_policy_header_3_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_value_3_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_value_3"
             android:textAlignment="center"
@@ -75,18 +75,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_header_4_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_header_4"
             android:textAlignment="center"
             android:textColor="@color/activity_privacy_policy_text_color"
-            android:textSize="20dp"
+            android:textSize="@dimen/activity_privacy_policy_header_4_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_value_4_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_value_4"
             android:textAlignment="center"
@@ -95,18 +95,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_header_5_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_header_5"
             android:textAlignment="center"
             android:textColor="@color/activity_privacy_policy_text_color"
-            android:textSize="20dp"
+            android:textSize="@dimen/activity_privacy_policy_header_5_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_value_5_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_value_5"
             android:textAlignment="center"
@@ -115,18 +115,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_header_6_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_header_6"
             android:textAlignment="center"
             android:textColor="@color/activity_privacy_policy_text_color"
-            android:textSize="20dp"
+            android:textSize="@dimen/activity_privacy_policy_header_6_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_value_6_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_value_6"
             android:textAlignment="center"
@@ -135,18 +135,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_header_7_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_header_7"
             android:textAlignment="center"
             android:textColor="@color/activity_privacy_policy_text_color"
-            android:textSize="20dp"
+            android:textSize="@dimen/activity_privacy_policy_header_7_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_value_7_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_value_7"
             android:textAlignment="center"
@@ -155,18 +155,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_header_8_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_header_8"
             android:textAlignment="center"
             android:textColor="@color/activity_privacy_policy_text_color"
-            android:textSize="20dp"
+            android:textSize="@dimen/activity_privacy_policy_header_8_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_value_8_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_value_8"
             android:textAlignment="center"
@@ -175,18 +175,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_header_9_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_header_9"
             android:textAlignment="center"
             android:textColor="@color/activity_privacy_policy_text_color"
-            android:textSize="20dp"
+            android:textSize="@dimen/activity_privacy_policy_header_9_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_value_9_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_value_9"
             android:textAlignment="center"
@@ -195,18 +195,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_header_10_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_header_10"
             android:textAlignment="center"
             android:textColor="@color/activity_privacy_policy_text_color"
-            android:textSize="20dp"
+            android:textSize="@dimen/activity_privacy_policy_header_10_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/activity_privacy_policy_value_10_margin_top"
             android:gravity="center"
             android:text="@string/activity_privacy_policy_value_10"
             android:textAlignment="center"

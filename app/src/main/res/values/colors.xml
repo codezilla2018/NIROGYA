@@ -23,6 +23,20 @@
     <color name="activity_achievement_silver_medal_button_text_color">#ffffff</color>
     <color name="activity_achievement_gold_medal_button_text_color">#ffffff</color>
 
+    <!--activity_instructions.xml-->
+    <color name="activity_instructions_cache_color_hint">#000000</color>
+
+    <!--activity_instructions_list_view_headers.xml-->
+    <color name="activity_instructions_list_view_headers_background">#534bae</color>
+    <color name="activity_instructions_list_view_headers_text_color">#ffffff</color>
+
+    <!--activity_instructions_list_view_values.xml-->
+    <color name="activity_instructions_list_view_value_background">#534bae</color>
+    <color name="activity_instructions_list_view_value_text_color">#ffffff</color>
+
+    <!--activity_privacy_policy.xml-->
+    <color name="activity_privacy_policy_text_color">#ffffff</color>
+
 
     <color name="white_trans">#99FFFFFF</color>
 
@@ -54,18 +68,6 @@
     <color name="achievement_activity_doco_view_color_1">#3bf92a</color>
     <color name="achievement_activity_doco_view_color_2">#f9f004</color>
 
-
-    <!--activity_instructions.xml-->
-    <color name="activity_instructions_cache_color_hint">#000000</color>
-
-    <!--activity_privacy_policy.xml-->
-    <color name="activity_privacy_policy_text_color">#ffffff</color>
-
-    <!--activity_instructions_list_view_headers.xml-->
-    <color name="activity_instructions_list_view_headers_background">#534bae</color>
-    <color name="activity_instructions_list_view_headers_text_color">#ffffff</color>
-    <color name="activity_instructions_list_view_value_background">#534bae</color>
-    <color name="activity_instructions_list_view_value_text_color">#ffffff</color>
 
     <!--activity_profile_height_selector.xml-->
     <color name="activity_profile_height_selector_background_color">#ffffff</color>

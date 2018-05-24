@@ -14,12 +14,12 @@
             android:layout_weight="3">
         </LinearLayout>
         <TextView
-            android:id="@+id/lblListItem"
+            android:id="@+id/instructions_list_view_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center|left"
             android:textColor="@color/activity_instructions_list_view_value_text_color"
-            android:textSize="14dip" />
+            android:textSize="@dimen/activity_instructions_list_view_values_list_view_item_text_size" />
     </LinearLayout>
 </LinearLayout>

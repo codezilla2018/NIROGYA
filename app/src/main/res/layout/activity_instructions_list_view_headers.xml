@@ -4,11 +4,11 @@
     android:layout_height="wrap_content"
     android:background="@color/activity_instructions_list_view_headers_background"
     android:orientation="vertical"
-    android:padding="8dp">
+    android:padding="@dimen/activity_instructions_list_view_headers_padding">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/activity_instructions_list_view_headers_linear_layout_height"
         android:orientation="horizontal"
         android:weightSum="4">
 
@@ -31,7 +31,7 @@
             android:layout_weight="1"
             android:gravity="center|left"
             android:textColor="@color/activity_instructions_list_view_headers_text_color"
-            android:textSize="17dp" />
+            android:textSize="@dimen/activity_instructions_list_view_headers_list_item_Header_text_size" />
     </LinearLayout>
 
 </LinearLayout>

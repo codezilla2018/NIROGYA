@@ -16,7 +16,7 @@
     <dimen name="activity_achievement_target_achievement_points_text_size">20dp</dimen>
     <dimen name="activity_achievement_steps_text_size">15dp</dimen>
     <dimen name="activity_achievement_decoview_width">100dp</dimen>
-    <dimen name="activity_achievement_decoview_height">100dp</dimen>
+    <dimen name="activity_achievement_decoview_height">100dp</dimen>_layout
     <dimen name="activity_achievement_decoview_line_width">20dp</dimen>
     <dimen name="activity_achievement_text_percentage_text_size">40sp</dimen>
     <dimen name="activity_achievement_medals_horizontal_linear_layout_margin_top">50dp</dimen>
@@ -32,5 +32,45 @@
     <dimen name="activity_achievement_gold_medal_button_height">100dp</dimen>
     <dimen name="activity_achievement_gold_medal_button_text_size">10dp</dimen>
     <dimen name="activity_achievement_gold_medal_margin_top">10dp</dimen>
+
+    <!--activity_instructions_list_view_headers.xml-->
+    <dimen name="activity_instructions_list_view_headers_padding">8dp</dimen>
+    <dimen name="activity_instructions_list_view_headers_linear_layout_height">50dp</dimen>
+    <dimen name="activity_instructions_list_view_headers_list_item_Header_text_size">17dp</dimen>
+
+    <!--activity_instructions_list_view_values.xml-->
+    <dimen name="activity_instructions_list_view_values_list_view_item_text_size">14dp</dimen>
+
+    <!--activity_privacy_policy.xml-->
+    <dimen name="activity_privacy_policy_padding">10dp</dimen>
+    <dimen name="activity_privacy_policy_header_1_text_size">25dp</dimen>
+    <dimen name="activity_privacy_policy_value_1_margin_top">10dp</dimen>
+    <dimen name="activity_privacy_policy_header_2_text_size">20dp</dimen>
+    <dimen name="activity_privacy_policy_value_2_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_header_3_text_size">20dp</dimen>
+    <dimen name="activity_privacy_policy_header_3_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_value_3_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_header_4_text_size">20dp</dimen>
+    <dimen name="activity_privacy_policy_header_4_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_value_4_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_header_5_text_size">20dp</dimen>
+    <dimen name="activity_privacy_policy_header_5_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_value_5_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_header_6_text_size">20dp</dimen>
+    <dimen name="activity_privacy_policy_header_6_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_value_6_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_header_7_text_size">20dp</dimen>
+    <dimen name="activity_privacy_policy_header_7_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_value_7_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_header_8_text_size">20dp</dimen>
+    <dimen name="activity_privacy_policy_header_8_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_value_8_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_header_9_text_size">20dp</dimen>
+    <dimen name="activity_privacy_policy_header_9_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_value_9_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_header_10_text_size">20dp</dimen>
+    <dimen name="activity_privacy_policy_header_10_margin_top">5dp</dimen>
+    <dimen name="activity_privacy_policy_value_10_margin_top">5dp</dimen>
+
 
 </resources>
