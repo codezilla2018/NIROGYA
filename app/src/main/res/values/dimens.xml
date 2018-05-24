@@ -121,7 +121,32 @@
     <dimen name="activity_splash_screen_text_view_top_margin">20dp</dimen>
     <dimen name="activity_splash_screen_text_view_text_size">30dp</dimen>
 
+    <!--activity_twitter_login.xml-->
+    <dimen name="activity_twitter_login_padding">16dp</dimen>
+    <dimen name="activity_twitter_login_button_margin_top">50dp</dimen>
 
+    <!--fragment_settings.xml-->
+    <dimen name="fragment_settings_step_goal_selector_height">60dp</dimen>
+    <dimen name="fragment_settings_sensitivity_selector_card_view_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_sensitivity_selector_height">60dp</dimen>
+    <dimen name="fragment_settings_weight_selector_card_view_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_weight_selector_height">60dp</dimen>
+    <dimen name="fragment_settings_gender_selector_card_view_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_gender_selector_height">60dp</dimen>
+    <dimen name="fragment_settings_height_selector_card_view_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_height_selector_height">60dp</dimen>
+    <dimen name="fragment_settings_language_selector_card_view_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_language_selector_height">60dp</dimen>
+    <dimen name="fragment_settings_instructions_selector_card_view_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_instructions_selector_height">60dp</dimen>
+    <dimen name="fragment_settings_privacy_policy_selector_card_view_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_privacy_policy_selector_height">60dp</dimen>
+
+    <!--fragment_settings_gender_selector.xml-->
+    <dimen name="fragment_settings_gender_selector_padding">20dp</dimen>
+    <dimen name="fragment_settings_gender_selector_head_text_text_size">20dp</dimen>
+    <dimen name="fragment_settings_gender_selector_sub_head_text_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_gender_selector_bottom_layout_margin_top">10dp</dimen>
 
 
 </resources>

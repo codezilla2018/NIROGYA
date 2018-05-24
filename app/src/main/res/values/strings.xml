@@ -78,6 +78,30 @@ I want to inform users of this Service that these third parties have access to y
     <string name="activity_select_gender_male_button_text">Male</string>
     <string name="activity_select_gender_next_button_text">NEXT</string>
 
+    <!--activity_timeline.xml-->
+    <string name="activity_timeline_no_tweet_message">No Tweets</string>
+
+    <!--activity_twitter_login.xml-->
+    <string name="activity_twitter_login_pre_message">Login once, We\'ll remember your details until you signed out. Next time when you are going to log in, You will be directly moved to the NIROGYA timeline.</string>
+
+    <!--fragment_settings.xml-->
+    <string name="fragment_settings_heading_1">Step Goal</string>
+    <string name="fragment_settings_heading_2">Sensitivity</string>
+    <string name="fragment_settings_heading_3">Weight</string>
+    <string name="fragment_settings_heading_4">Gender</string>
+    <string name="fragment_settings_heading_5">Height</string>
+    <string name="fragment_settings_heading_6">Language options</string>
+    <string name="fragment_settings_heading_7">Instructions</string>
+    <string name="fragment_settings_heading_8">Privacy Policy</string>
+
+    <!--fragment_settings_gender_selector.xml-->
+    <string name="fragment_settings_gender_selector_head_text">Gender</string>
+    <string name="fragment_settings_gender_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
+    <string name="fragment_settings_gender_selector_female_text">female</string>
+    <string name="fragment_settings_gender_selector_male_text">male</string>
+    <string name="fragment_settings_gender_selector_ok_button_text">OK</string>
+    <string name="fragment_settings_gender_selector_cancel_button_text">CANCEL</string>
+
     <!--ProfileActivity-->
     <string name="profile_activity_title_text">NIROGYA USER DETAILS</string>
     <string name="profile_activity_message_text">Please select height and weight</string>
@@ -126,25 +150,6 @@ I want to inform users of this Service that these third parties have access to y
 
 
 
-
-
-    <!--fragment_settings.xml-->
-    <string name="fragment_settings_heading_1">Step Goal</string>
-    <string name="fragment_settings_heading_2">Sensitivity</string>
-    <string name="fragment_settings_heading_3">Weight</string>
-    <string name="fragment_settings_heading_4">Gender</string>
-    <string name="fragment_settings_heading_5">Height</string>
-    <string name="fragment_settings_heading_6">Language options</string>
-    <string name="fragment_settings_heading_7">Instructions</string>
-    <string name="fragment_settings_heading_8">Privacy Policy</string>
-
-    <!--fragment_settings_gender_selector.xml-->
-    <string name="fragment_settings_gender_selector_head_text">Gender</string>
-    <string name="fragment_settings_gender_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
-    <string name="fragment_settings_gender_selector_female_text">female</string>
-    <string name="fragment_settings_gender_selector_male_text">male</string>
-    <string name="fragment_settings_gender_selector_ok_button_text">OK</string>
-    <string name="fragment_settings_gender_selector_cancel_button_text">CANCEL</string>
 
 
     <!--fragment_settings_height_selector.xml-->
@@ -209,12 +214,6 @@ I want to inform users of this Service that these third parties have access to y
     <string name="item_1">STEPS</string>
     <string name="item_2">TIPS</string>
     <string name="item_3">MORE</string>
-
-    <!--activity_timeline.xml-->
-    <string name="activity_timeline_no_tweet_message">No Tweets</string>
-
-    <!--activity_twitter_login.xml-->
-    <string name="activity_twitter_login_pre_message">Login once, We\'ll remember your details until you signed out. Next time when you are going to log in, You will be directly moved to the NIROGYA timeline.</string>
 
 
 </resources>

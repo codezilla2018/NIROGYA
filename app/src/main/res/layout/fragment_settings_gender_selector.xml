@@ -4,21 +4,20 @@
     android:layout_height="wrap_content"
     android:background="@color/fragment_settings_gender_selector_background_color"
     android:orientation="vertical"
-    android:padding="20dp">
-
+    android:padding="@dimen/fragment_settings_gender_selector_padding">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/fragment_settings_gender_selector_head_text"
         android:textColor="@color/fragment_settings_gender_selector_topic_color"
-        android:textSize="20dp"
+        android:textSize="@dimen/fragment_settings_gender_selector_head_text_text_size"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/fragment_settings_gender_selector_sub_head_text_margin_top"
         android:text="@string/fragment_settings_gender_selector_sub_head_text"
         android:textColor="@color/primaryColor" />
 
@@ -57,7 +56,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/fragment_settings_gender_selector_bottom_layout_margin_top"
         android:gravity="right"
         android:orientation="horizontal">
 

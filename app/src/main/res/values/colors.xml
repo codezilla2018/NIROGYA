@@ -65,6 +65,14 @@
     <color name="activity_splash_screen_background_color">#1a237e</color>
     <color name="activity_splash_screen_heading_color">#ffffff</color>
 
+    <!--fragment_settings.xml-->
+    <color name="fragment_settings_background_color">#534bae</color>
+    <color name="fragment_settings_text_color">#ffffff</color>
+
+    <!--fragment_settings_gender_selector.xml-->
+    <color name="fragment_settings_gender_selector_background_color">#ffffff</color>
+    <color name="fragment_settings_gender_selector_topic_color">#140078</color>
+
 
     <color name="white_trans">#99FFFFFF</color>
 
@@ -77,14 +85,6 @@
     <color name="achievement_activity_doco_view_color_1">#3bf92a</color>
     <color name="achievement_activity_doco_view_color_2">#f9f004</color>
 
-
-    <!--fragment_settings.xml-->
-    <color name="fragment_settings_background_color">#534bae</color>
-    <color name="fragment_settings_text_color">#ffffff</color>
-
-    <!--fragment_settings_gender_selector.xml-->
-    <color name="fragment_settings_gender_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_gender_selector_topic_color">#140078</color>
 
     <!--fragment_settings_height_selector.xml-->
     <color name="fragment_settings_height_selector_background_color">#ffffff</color>

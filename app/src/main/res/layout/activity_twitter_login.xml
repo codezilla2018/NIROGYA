@@ -2,21 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/activity_twitter_login_background"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@drawable/activity_twitter_login_background">
+    android:padding="@dimen/activity_twitter_login_padding">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/primaryTextColor"
+        android:gravity="center"
         android:text="@string/activity_twitter_login_pre_message"
-        android:gravity="center"/>
+        android:textColor="@color/primaryTextColor" />
     <!-- twitter login button to do login -->
     <com.twitter.sdk.android.core.identity.TwitterLoginButton
         android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="@dimen/activity_twitter_login_button_margin_top" />
+
 </LinearLayout>
