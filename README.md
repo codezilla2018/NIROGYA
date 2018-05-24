@@ -121,6 +121,7 @@
   <li>Samsung Galaxy J7 Nxt [os-Nougat]</li>
   <li>Samsung Galaxy J7 [os-Marshmallow]</li>
   <li>Samsung Galaxy Grand prime [os-lollipop]</li>
+  <p>Apk file was added - <a href="https://github.com/codezilla2018/NIROGYA/tree/master/apk">view APK</a> </p>
 </ul>
 <h2>Contact Details</h2>
 <ul>
