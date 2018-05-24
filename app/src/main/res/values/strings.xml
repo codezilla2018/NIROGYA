@@ -102,6 +102,25 @@ I want to inform users of this Service that these third parties have access to y
     <string name="fragment_settings_gender_selector_ok_button_text">OK</string>
     <string name="fragment_settings_gender_selector_cancel_button_text">CANCEL</string>
 
+    <!--fragment_settings_height_selector.xml-->
+    <string name="fragment_settings_height_selector_head_text">Height</string>
+    <string name="fragment_settings_height_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
+    <string name="fragment_settings_height_selector_unit">cm</string>
+    <string name="fragment_settings_height_selector_ok_button_text">OK</string>
+    <string name="fragment_settings_height_selector_cancel_button_text">CANCEL</string>
+
+    <!--fragment_settings_language_selector.xml-->
+    <string name="fragment_settings_language_selector_head_text">Language</string>
+    <string name="fragment_settings_language_selector_message">You have NIROGA version 1.0.0 and It is only compatible with ENGLISH.We will try to give more language support with upcoming versions.</string>
+    <string name="fragment_settings_language_selector_cancel_button">CANCEL</string>
+    <string name="fragment_settings_language_selector_ok_button">OK</string>
+
+    <!--fragment_settings_sensitivity_selector.xml-->
+    <string name="fragment_settings_sensitivity_selector_head_text">Sensitivity</string>
+    <string name="fragment_settings_sensitivity_selector_message">Distance &amp; speed calculation needs it</string>
+    <string name="fragment_settings_sensitivity_selector_cancel_button">CANCEL</string>
+    <string name="fragment_settings_sensitivity_selector_ok_button">OK</string>
+
     <!--ProfileActivity-->
     <string name="profile_activity_title_text">NIROGYA USER DETAILS</string>
     <string name="profile_activity_message_text">Please select height and weight</string>
@@ -150,27 +169,6 @@ I want to inform users of this Service that these third parties have access to y
 
 
 
-
-
-    <!--fragment_settings_height_selector.xml-->
-    <string name="fragment_settings_height_selector_head_text">Height</string>
-    <string name="fragment_settings_height_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
-    <string name="fragment_settings_height_selector_unit">cm</string>
-    <string name="fragment_settings_height_selector_ok_button_text">OK</string>
-    <string name="fragment_settings_height_selector_cancel_button_text">CANCEL</string>
-
-    <!--fragment_settings_language_selector.xml-->
-    <string name="fragment_settings_language_selector_head_text">Language</string>
-    <string name="fragment_settings_language_selector_message">You have NIROGA version 1.0.0 and It is only compatible with ENGLISH.We will try to give more language support with upcoming versions.</string>
-    <string name="fragment_settings_language_selector_cancel_button">CANCEL</string>
-    <string name="fragment_settings_language_selector_ok_button">OK</string>
-
-
-    <!--fragment_settings_sensitivity_selector.xml-->
-    <string name="fragment_settings_sensitivity_selector_head_text">Sensitivity</string>
-    <string name="fragment_settings_sensitivity_selector_message">Distance &amp; speed calculation needs it</string>
-    <string name="fragment_settings_sensitivity_selector_cancel_button">CANCEL</string>
-    <string name="fragment_settings_sensitivity_selector_ok_button">OK</string>
 
     <!--fragment_settings_step_goal_selector.xml-->
     <string name="fragment_settings_step_goal_selector_head_text">Step Goal</string>

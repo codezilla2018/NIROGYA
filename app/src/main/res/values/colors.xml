@@ -73,6 +73,18 @@
     <color name="fragment_settings_gender_selector_background_color">#ffffff</color>
     <color name="fragment_settings_gender_selector_topic_color">#140078</color>
 
+    <!--fragment_settings_height_selector.xml-->
+    <color name="fragment_settings_height_selector_background_color">#ffffff</color>
+    <color name="fragment_settings_height_selector_topic_color">#140078</color>
+
+    <!--fragment_settings_language_selector.xml-->
+    <color name="fragment_settings_language_selector_background_color">#ffffff</color>
+    <color name="fragment_settings_language_selector_topic_color">#140078</color>
+
+    <!--fragment_settings_sensitivity_selector.xml-->
+    <color name="fragment_settings_sensitivity_selector_background_color">#ffffff</color>
+    <color name="fragment_settings_sensitivity_selector_topic_color">#140078</color>
+
 
     <color name="white_trans">#99FFFFFF</color>
 
@@ -85,18 +97,6 @@
     <color name="achievement_activity_doco_view_color_1">#3bf92a</color>
     <color name="achievement_activity_doco_view_color_2">#f9f004</color>
 
-
-    <!--fragment_settings_height_selector.xml-->
-    <color name="fragment_settings_height_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_height_selector_topic_color">#140078</color>
-
-    <!--fragment_settings_language_selector.xml-->
-    <color name="fragment_settings_language_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_language_selector_topic_color">#140078</color>
-
-    <!--fragment_settings_sensitivity_selector.xml-->
-    <color name="fragment_settings_sensitivity_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_sensitivity_selector_topic_color">#140078</color>
 
     <!--fragment_settings_step_goal_selector.xml-->
     <color name="fragment_settings_step_goal_selector_background_color">#ffffff</color>

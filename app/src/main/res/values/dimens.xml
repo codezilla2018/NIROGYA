@@ -148,5 +148,25 @@
     <dimen name="fragment_settings_gender_selector_sub_head_text_margin_top">10dp</dimen>
     <dimen name="fragment_settings_gender_selector_bottom_layout_margin_top">10dp</dimen>
 
+    <!--fragment_settings_height_selector.xml-->
+    <dimen name="fragment_settings_height_selector_padding">20dp</dimen>
+    <dimen name="fragment_settings_height_selector_head_text_text_size">20dp</dimen>
+    <dimen name="fragment_settings_height_selector_sub_head_text_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_height_selector_unit_margin_left">20dp</dimen>
+    <dimen name="fragment_settings_height_selector_bottom_layout_margin_top">10dp</dimen>
+
+    <!--fragment_settings_language_selector.xml-->
+    <dimen name="fragment_settings_language_selector_padding">20dp</dimen>
+    <dimen name="fragment_settings_language_selector_head_text_text_size">20dp</dimen>
+    <dimen name="fragment_settings_language_selector_message_parent_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_language_selector_bottom_layout_margin_top">10dp</dimen>
+
+    <!--fragment_settings_sensitivity_selector.xml-->
+    <dimen name="fragment_settings_sensitivity_selector_padding">20dp</dimen>
+    <dimen name="fragment_settings_sensitivity_selector_head_text_text_size">20dp</dimen>
+    <dimen name="fragment_settings_sensitivity_selector_message_margin_top">10dp</dimen>
+    <dimen name="fragment_settings_sensitivity_selector_bottom_layout_margin_top">10dp</dimen>
+
+
 
 </resources>
