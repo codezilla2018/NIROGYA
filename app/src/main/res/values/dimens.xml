@@ -228,7 +228,4 @@
     <dimen name="fragmnet_tips_view_more_tweets_margin_top">20dp</dimen>
     <dimen name="fragment_tips_twitter_text_margin_top">30dp</dimen>
 
-
-
-
 </resources>

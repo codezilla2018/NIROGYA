@@ -1,8 +1,7 @@
 <resources>
     <string name="app_name">NIROGYA</string>
 
-    <!--activity_splash_screen-->
-    <string name="app_heading">NIROGYA</string>
+    <!--**********string resources in layout_files*********-->
 
     <!--activity_achievement.xml-->
     <string name="activity_achievement_selected_medel_caption_default_text">10000</string>
@@ -45,7 +44,6 @@ I want to inform users of this Service that these third parties have access to y
     <string name="activity_privacy_policy_value_9">I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</string>
     <string name="activity_privacy_policy_value_10">If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me.</string>
 
-
     <!--activity_profile.xml-->
     <string name="activity_profile_header_name">My Profile</string>
     <string name="activity_profile_description_name">To ensure the accuracy, please input your accurate information. We never share them with third parties.</string>
@@ -62,7 +60,6 @@ I want to inform users of this Service that these third parties have access to y
     <string name="activity_profile_height_selector_ok_button">OK</string>
     <string name="activity_profile_height_selector_cancel_button">CANCEL</string>
 
-
     <!--activity_profile_weight_selector.xml-->
     <string name="activity_profile_weight_selector_topic">Weight</string>
     <string name="activity_profile_weight_selector_sub_topic">Distance &amp; speed calculation needs it</string>
@@ -70,13 +67,15 @@ I want to inform users of this Service that these third parties have access to y
     <string name="activity_profile_weight_selector_ok_button">OK</string>
     <string name="activity_profile_weight_selector_cancel_button">CANCEL</string>
 
-
     <!--activity_select_gender.xml-->
     <string name="activity_select_gender_main_caption_text">Select Gender</string>
     <string name="activity_select_gender_sub_heading_text">Calories &amp; stride length calcaultion needs it.</string>
     <string name="activity_select_gender_female_button_text">Female</string>
     <string name="activity_select_gender_male_button_text">Male</string>
     <string name="activity_select_gender_next_button_text">NEXT</string>
+
+    <!--activity_splash_screen-->
+    <string name="app_heading">NIROGYA</string>
 
     <!--activity_timeline.xml-->
     <string name="activity_timeline_no_tweet_message">No Tweets</string>
@@ -155,16 +154,12 @@ I want to inform users of this Service that these third parties have access to y
     <string name="fragment_tips_view_more_tweets_text">VIEW MORE</string>
     <string name="fragment_tips_twitter_text"> This daily health tips service is based on nirogya offical twitter page.</string>
 
-
-
+    <!--**********string resources in java files*********-->
 
     <!--ProfileActivity-->
     <string name="profile_activity_title_text">NIROGYA USER DETAILS</string>
     <string name="profile_activity_message_text">Please select height and weight</string>
     <string name="profile_activity_ok_button_text">YES</string>
-
-
-
 
     <!--InstructionsActivity-->
     <string name="instructions_activity_header_1">How to use?</string>
@@ -188,7 +183,6 @@ I want to inform users of this Service that these third parties have access to y
     <string name="instructions_activity_header_9_child_data">We use your height and weight to calculate your burned calories &amp; distance, so please ensure you input accurate information in the settings.</string>
     <string name="instructions_activity_header_10_child_data">We help you to set your goal according to your achieved steps to keep you motivated.</string>
 
-
     <!--steps_fragment-->
     <string name="steps_fragment_reset_data_dialog_message">Are you sure to reset all steps and related information</string>
     <string name="steps_fragment_reset_data_dialog_ok_button">yes</string>
@@ -204,7 +198,6 @@ I want to inform users of this Service that these third parties have access to y
     <string name="tips_fragment_twitter_text"> This daily health tips service is based on nirogya offical twitter page.</string>
     <string name="tips_fragment_offline_internet_connection"> This service needs an internet connection.</string>
 
-
     <!--achievement_activity-->
     <string name="achievement_activity_target_point_1">10000</string>
     <string name="achievement_activity_target_point_2">20000</string>
@@ -217,6 +210,5 @@ I want to inform users of this Service that these third parties have access to y
     <string name="item_1">STEPS</string>
     <string name="item_2">TIPS</string>
     <string name="item_3">MORE</string>
-
 
 </resources>
