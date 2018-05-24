@@ -113,6 +113,13 @@
 <li>finnally I have included the privacy policy of the application.</li>
 </ul>
 </ul>
+<h2>Tested Devices</h2>
+<ul>
+  <li>Huawei GR5 mini [os-Nougat]</li>
+  <li>Samsung Galaxy J7 Nxt [os-Nougat]</li>
+  <li>Samsung Galaxy J7 [os-Marshmallow]</li>
+  <li>Samsung Galaxy Grand prime [os-lollipop]</li>
+</ul>
 <h2>Contact Details</h2>
 <ul>
   <li>Contributer: kasunchinthaka555@gmail.com</li>
