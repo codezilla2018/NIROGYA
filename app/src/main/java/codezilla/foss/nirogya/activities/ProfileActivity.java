@@ -152,7 +152,7 @@ public class ProfileActivity extends AppCompatActivity {
                     @Override
                     public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
                         //Display the newly selected number from picker
-                        Toast.makeText(ProfileActivity.this, String.valueOf(newVal), Toast.LENGTH_SHORT).show();
+                   //     Toast.makeText(ProfileActivity.this, String.valueOf(newVal), Toast.LENGTH_SHORT).show();
                         height = String.valueOf(newVal);
                     }
                 });
@@ -244,7 +244,7 @@ public class ProfileActivity extends AppCompatActivity {
                     @Override
                     public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
                         //Display the newly selected number from picker
-                        Toast.makeText(ProfileActivity.this, String.valueOf(newVal), Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(ProfileActivity.this, String.valueOf(newVal), Toast.LENGTH_SHORT).show();
                         weight = String.valueOf(newVal);
                     }
                 });

@@ -178,12 +178,20 @@ public class TipsFragment extends Fragment {
             final long diffHours = diff / (60 * 60 * 1000) % 24;
             diffDays = diff / (24 * 60 * 60 * 1000);
             if (caption == null) {
-                showProgressDialog();
-                downloadTweets();
-            } else {
-                if (diffDays >= 1) {
+                if (isOnline()) {
                     showProgressDialog();
                     downloadTweets();
+                } else {
+                    Toast.makeText(getActivity(), getResources().getString(R.string.tips_fragment_offline_internet_connection), Toast.LENGTH_SHORT).show();
+                }
+            } else {
+                if (diffDays >= 1) {
+                    if (isOnline()) {
+                        showProgressDialog();
+                        downloadTweets();
+                    } else {
+                        Toast.makeText(getActivity(), getResources().getString(R.string.tips_fragment_offline_internet_connection), Toast.LENGTH_SHORT).show();
+                    }
                 } else {
                     captionTextView.setText(retrievedData[1]);
                     descriptionTextView.setText(retrievedData[2]);

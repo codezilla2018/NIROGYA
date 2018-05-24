@@ -22,8 +22,10 @@ import codezilla.foss.nirogya.helpers.SharedPreferenceManager;
 
 public class TwitterLoginActivity extends AppCompatActivity {
 
-    private String consumerKey = "Rwcb00iF2za9fN5HPAlGQMHKn";
-    private String consumerSecret = "e1ALoPlLROpnMiNGygL2ry6LwUupe1atkJjqoLARQkHSG7hYyC";
+//    private String consumerKey = "Rwcb00iF2za9fN5HPAlGQMHKn";
+//    private String consumerSecret = "e1ALoPlLROpnMiNGygL2ry6LwUupe1atkJjqoLARQkHSG7hYyC";
+    private String consumerKey = "nW88XLuFSI9DEfHOX2tpleHbR";
+    private String consumerSecret = "hCg3QClZ1iLR13D3IeMvebESKmakIelp4vwFUICuj6HAfNNCer";
     private String screenName = "nirogya";
     private SharedPreferenceManager sharedPreferenceManager;
     private TwitterLoginButton loginButton;
