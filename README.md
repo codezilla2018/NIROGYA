@@ -111,9 +111,14 @@
 <li>finnally I have included the privacy policy of the application.</li>
 </ul>
 </ul>
-<h2>Who do I talk to?</h2>
+<h2>Contact Details</h2>
 <ul>
-  <li>Contributer: Kasun Chinthaka Piyarathna</li>
+  <li>Contributer: kasunchinthaka555@gmail.com</li>
+</ul>
+<h2>How to Contribute</h2>
+<ul>
+  <li>Please report issues at <a href="https://github.com/codezilla2018/NIROGYA/issues">GitHub Issue Tracker</a>.</li>
+  <li>Send your contributions as pull requests to <a href="https://github.com/codezilla2018/NIROGYA/tree/master">master branch</a>.</li>
 </ul>
 <h2>Licence</h2>
   <li>This project is maintained under the MIT licence.</li>
