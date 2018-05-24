@@ -6,8 +6,7 @@
     android:background="@drawable/fragment_steps_background"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="10dp">
-
+    android:padding="@dimen/fragment_steps_padding">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="@dimen/fragment_steps_top_horizontal_layout_height"
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="4">
@@ -44,7 +43,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="@dimen/fragment_steps_expandable_button_parent_layout_height"
                 android:layout_weight="3"
                 android:gravity="center">
 
@@ -55,16 +54,16 @@
                     android:layout_gravity="center"
                     app:aebAnimDurationMillis="175"
                     app:aebBlurBackground="true"
-                    app:aebButtonElevation="4dp"
-                    app:aebButtonGapDp="25dp"
+                    app:aebButtonElevation="@dimen/fragment_steps_expandable_button_elevation"
+                    app:aebButtonGapDp="@dimen/fragment_steps_expandable_button_gap"
                     app:aebEndAngleDegree="-90"
                     app:aebIsSelectionMode="false"
                     app:aebMainButtonRotateAnimDurationMillis="300"
                     app:aebMainButtonRotateDegree="-135"
-                    app:aebMainButtonSizeDp="45dp"
+                    app:aebMainButtonSizeDp="@dimen/fragment_steps_expandable_button_main_button_size"
                     app:aebRippleEffect="true"
                     app:aebStartAngleDegree="-90"
-                    app:aebSubButtonSizeDp="45dp" />
+                    app:aebSubButtonSizeDp="@dimen/fragment_steps_expandable_button_sub_button_size" />
 
             </LinearLayout>
 
@@ -78,12 +77,12 @@
             android:weightSum="2">
 
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="@dimen/fragment_steps_steps_card_view_width"
+                android:layout_height="@dimen/fragment_steps_steps_card_view_height"
                 android:layout_gravity="center"
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="@dimen/fragment_steps_steps_card_view_margin_right"
                 android:layout_weight="1"
-                card_view:cardCornerRadius="4dp">
+                card_view:cardCornerRadius="@dimen/fragment_steps_steps_card_view_card_corner_radius">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -101,30 +100,30 @@
                         android:id="@+id/human_steps"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="@dimen/fragment_steps_human_steps_margin_top"
                         android:gravity="center"
                         android:text="@string/fragment_steps_count_steps"
                         android:textColor="@color/fragment_steps_text_color"
-                        android:textSize="20dp" />
+                        android:textSize="@dimen/fragment_steps_human_steps_text_size" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/fragment_steps_step_unit"
-                        android:textColor="@color/fragment_steps_text_color"
+                        android:layout_marginTop="@dimen/fragment_steps_step_unit_margin_top"
                         android:gravity="center"
-                        android:layout_marginTop="10dp"/>
+                        android:text="@string/fragment_steps_step_unit"
+                        android:textColor="@color/fragment_steps_text_color" />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="@dimen/fragment_steps_distance_card_view_width"
+                android:layout_height="@dimen/fragment_steps_distance_card_view_height"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="@dimen/fragment_steps_distance_card_view_margin_left"
                 android:layout_weight="1"
-                card_view:cardCornerRadius="4dp">
+                card_view:cardCornerRadius="@dimen/fragment_steps_distance_card_view_card_corner_radius">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -142,18 +141,19 @@
                         android:id="@+id/miles"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="@dimen/fragment_steps_count_distance_margin_top"
                         android:gravity="center"
                         android:text="@string/fragment_steps_count_distance"
                         android:textColor="@color/fragment_steps_text_color"
-                        android:textSize="20dp" />
+                        android:textSize="@dimen/fragment_steps_count_distance_text_size" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/fragment_steps_distance_unit"
-                        android:textColor="@color/fragment_steps_text_color"
+                        android:layout_marginTop="@dimen/fragment_steps_count_distance_unit_margin_top"
                         android:gravity="center"
-                        android:layout_marginTop="10dp"/>
+                        android:text="@string/fragment_steps_distance_unit"
+                        android:textColor="@color/fragment_steps_text_color" />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
@@ -162,17 +162,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/fragment_steps_calories_step_goal_horizontal_layout_margin_top"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="@dimen/fragment_steps_calory_card_view_width"
+                android:layout_height="@dimen/fragment_steps_calory_card_view_height"
                 android:layout_gravity="center"
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="@dimen/fragment_steps_calory_card_view_margin_right"
                 android:layout_weight="1"
-                card_view:cardCornerRadius="4dp">
+                card_view:cardCornerRadius="@dimen/fragment_steps_calory_card_view_card_corner_radius">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -190,29 +190,31 @@
                         android:id="@+id/calories_burnt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="@dimen/fragment_steps_count_calories_margin_top"
                         android:gravity="center"
                         android:text="@string/fragment_steps_count_calories"
                         android:textColor="@color/fragment_steps_text_color"
-                        android:textSize="20dp" />
+                        android:textSize="@dimen/fragment_steps_count_calories_text_size" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/fragment_steps_calory_unit"
-                        android:textColor="@color/fragment_steps_text_color"
+                        android:layout_marginTop="@dimen/fragment_steps_calory_unit_margin_top"
                         android:gravity="center"
-                        android:layout_marginTop="10dp"/>
+                        android:text="@string/fragment_steps_calory_unit"
+                        android:textColor="@color/fragment_steps_text_color" />
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="@dimen/fragment_steps_step_goal_card_view_width"
+                android:layout_height="@dimen/fragment_steps_step_goal_card_view_height"
                 android:layout_gravity="center"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="@dimen/fragment_steps_step_goal_card_view_margin_left"
                 android:layout_weight="1"
-                card_view:cardCornerRadius="4dp">
+                card_view:cardCornerRadius="@dimen/fragment_steps_step_goal_card_view_card_corner_radius">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -230,21 +232,23 @@
                         android:id="@+id/step_goal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="@dimen/fragment_steps_step_goal_margin_top"
                         android:gravity="center"
                         android:text="@string/fragment_steps_step_goal"
                         android:textColor="@color/fragment_steps_text_color"
-                        android:textSize="20dp" />
+                        android:textSize="@dimen/fragment_steps_step_goal_text_size" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/fragment_steps_step_goal_unit"
-                        android:textColor="@color/fragment_steps_text_color"
+                        android:layout_marginTop="@dimen/fragment_steps_step_goal_unit_margin_top"
                         android:gravity="center"
-                        android:layout_marginTop="10dp"/>
+                        android:text="@string/fragment_steps_step_goal_unit"
+                        android:textColor="@color/fragment_steps_text_color" />
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
+
         </LinearLayout>
 
     </LinearLayout>

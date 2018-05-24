@@ -121,6 +121,43 @@ I want to inform users of this Service that these third parties have access to y
     <string name="fragment_settings_sensitivity_selector_cancel_button">CANCEL</string>
     <string name="fragment_settings_sensitivity_selector_ok_button">OK</string>
 
+    <!--fragment_settings_step_goal_selector.xml-->
+    <string name="fragment_settings_step_goal_selector_head_text">Step Goal</string>
+    <string name="fragment_settings_step_goal_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
+    <string name="fragment_settings_step_goal_selector_unit">step goal</string>
+    <string name="fragment_settings_step_goal_selector_radio_button_1">6000</string>
+    <string name="fragment_settings_step_goal_selector_radio_button_2">12000</string>
+    <string name="fragment_settings_step_goal_selector_radio_button_3">24000</string>
+    <string name="fragment_settings_step_goal_selector_ok_button_text">OK</string>
+    <string name="fragment_settings_step_goal_selector_cancel_button_text">CANCEL</string>
+    <string name="fragment_settings_step_goal_selector_unit_text">step goal</string>
+
+    <!--fragment_settings_weight_selector.xml-->
+    <string name="fragment_settings_weight_selector_head_text">Weight</string>
+    <string name="fragment_settings_weight_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
+    <string name="fragment_settings_weight_selector_unit">kg</string>
+    <string name="fragment_settings_weight_selector_ok_button_text">OK</string>
+    <string name="fragment_settings_weight_selector_cancel_button_text">CANCEL</string>
+
+    <!--fragment_steps-->
+    <string name="fragment_steps_start_button_text">Start Pedometer</string>
+    <string name="fragment_steps_puase_button_text">PAUSE</string>
+    <string name="fragment_steps_count_steps">0</string>
+    <string name="fragment_steps_count_distance">0.0000</string>
+    <string name="fragment_steps_count_calories">0.0000</string>
+    <string name="fragment_steps_step_goal">Step Goal</string>
+    <string name="fragment_steps_step_unit">Steps</string>
+    <string name="fragment_steps_distance_unit">Kms</string>
+    <string name="fragment_steps_calory_unit">Cal</string>
+    <string name="fragment_steps_step_goal_unit">Step goal</string>
+
+    <!--fragment_tips.xml-->
+    <string name="fragment_tips_view_more_tweets_text">VIEW MORE</string>
+    <string name="fragment_tips_twitter_text"> This daily health tips service is based on nirogya offical twitter page.</string>
+
+
+
+
     <!--ProfileActivity-->
     <string name="profile_activity_title_text">NIROGYA USER DETAILS</string>
     <string name="profile_activity_message_text">Please select height and weight</string>
@@ -167,38 +204,6 @@ I want to inform users of this Service that these third parties have access to y
     <string name="tips_fragment_twitter_text"> This daily health tips service is based on nirogya offical twitter page.</string>
     <string name="tips_fragment_offline_internet_connection"> This service needs an internet connection.</string>
 
-
-
-
-    <!--fragment_settings_step_goal_selector.xml-->
-    <string name="fragment_settings_step_goal_selector_head_text">Step Goal</string>
-    <string name="fragment_settings_step_goal_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
-    <string name="fragment_settings_step_goal_selector_unit">step goal</string>
-    <string name="fragment_settings_step_goal_selector_radio_button_1">6000</string>
-    <string name="fragment_settings_step_goal_selector_radio_button_2">12000</string>
-    <string name="fragment_settings_step_goal_selector_radio_button_3">24000</string>
-    <string name="fragment_settings_step_goal_selector_ok_button_text">OK</string>
-    <string name="fragment_settings_step_goal_selector_cancel_button_text">CANCEL</string>
-
-
-    <!--fragment_settings_weight_selector.xml-->
-    <string name="fragment_settings_weight_selector_head_text">Weight</string>
-    <string name="fragment_settings_weight_selector_sub_head_text">Distance &amp; speed calculation needs it</string>
-    <string name="fragment_settings_weight_selector_unit">kg</string>
-    <string name="fragment_settings_weight_selector_ok_button_text">OK</string>
-    <string name="fragment_settings_weight_selector_cancel_button_text">CANCEL</string>
-
-    <!--fragment_steps_caloryteps-->
-    <string name="fragment_steps_start_button_text">Start Pedometer</string>
-    <string name="fragment_steps_puase_button_text">PAUSE</string>
-    <string name="fragment_steps_count_steps">0</string>
-    <string name="fragment_steps_count_distance">0.0000</string>
-    <string name="fragment_steps_count_calories">0.0000</string>
-    <string name="fragment_steps_step_goal">Step Goal</string>
-    <string name="fragment_steps_step_unit">Steps</string>
-    <string name="fragment_steps_distance_unit">Kms</string>
-    <string name="fragment_steps_calory_unit">Cal</string>
-    <string name="fragment_steps_step_goal_unit">Step goal</string>
 
     <!--achievement_activity-->
     <string name="achievement_activity_target_point_1">10000</string>

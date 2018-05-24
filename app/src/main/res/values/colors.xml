@@ -85,6 +85,21 @@
     <color name="fragment_settings_sensitivity_selector_background_color">#ffffff</color>
     <color name="fragment_settings_sensitivity_selector_topic_color">#140078</color>
 
+    <!--fragment_settings_step_goal_selector.xml-->
+    <color name="fragment_settings_step_goal_selector_background_color">#ffffff</color>
+    <color name="fragment_settings_step_goal_selector_topic_color">#140078</color>
+
+    <!--fragment_settings_weight_selector.xml-->
+    <color name="fragment_settings_weight_selector_background_color">#ffffff</color>
+    <color name="fragment_settings_weight_selector_topic_color">#140078</color>
+
+    <!--fragment_steps-->
+    <color name="fragment_steps_cardview_background">#534bae</color>
+    <color name="fragment_steps_text_color">#ffffff</color>
+
+    <!--fragment_tips.xml-->
+    <color name="fragment_tips_text_color">#ffffff</color>
+
 
     <color name="white_trans">#99FFFFFF</color>
 
@@ -98,20 +113,8 @@
     <color name="achievement_activity_doco_view_color_2">#f9f004</color>
 
 
-    <!--fragment_settings_step_goal_selector.xml-->
-    <color name="fragment_settings_step_goal_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_step_goal_selector_topic_color">#140078</color>
 
-    <!--fragment_settings_weight_selector.xml-->
-    <color name="fragment_settings_weight_selector_background_color">#ffffff</color>
-    <color name="fragment_settings_weight_selector_topic_color">#140078</color>
 
-    <!--fragment_tips.xml-->
-    <color name="fragment_tips_text_color">#ffffff</color>
-
-    <!--fragment_steps-->
-    <color name="fragment_steps_cardview_background">#534bae</color>
-    <color name="fragment_steps_text_color">#ffffff</color>
 
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
