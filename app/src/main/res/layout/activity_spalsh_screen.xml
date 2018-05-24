@@ -3,23 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/activity_splash_screen_background"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="codezilla.foss.nirogya.activities.SplashScreenActivity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/activity_splash_screen_icon"/>
+        android:src="@drawable/activity_splash_screen_icon" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/activity_splash_screen_text_view_top_margin"
+        android:text="@string/app_heading"
         android:textColor="@color/activity_splash_screen_heading_color"
-        android:textSize="@dimen/activity_splash_screen_text_view_text_size"
-        android:text="@string/app_heading" />
+        android:textSize="@dimen/activity_splash_screen_text_view_text_size" />
 
 </LinearLayout>

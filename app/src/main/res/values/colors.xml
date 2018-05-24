@@ -56,21 +56,21 @@
     <color name="activity_profile_weight_selector_background_color">#ffffff</color>
     <color name="activity_profile_weight_selector_topic_color">#140078</color>
 
-
-    <color name="white_trans">#99FFFFFF</color>
+    <!--activity_select_gender.xml-->
+    <color name="activity_select_gender_main_caption_color">#54C571</color>
+    <color name="activity_select_gender_sub_heading_color">#ffffff</color>
+    <color name="activity_select_gender_next_button_text_color">#ffffff</color>
 
     <!--activity_splash_screen.xml-->
     <color name="activity_splash_screen_background_color">#1a237e</color>
     <color name="activity_splash_screen_heading_color">#ffffff</color>
 
+
+    <color name="white_trans">#99FFFFFF</color>
+
     <!--SelectGenderActivity-->
     <color name="select_gender_activity_selected_button_text_color">#ffffff</color>
     <color name="select_gender_activity_unselected_button_text_color">#504A4B</color>
-
-    <!--activity_select_gender.xml-->
-    <color name="activity_select_gender_main_caption_color">#54C571</color>
-    <color name="activity_select_gender_sub_heading_color">#ffffff</color>
-    <color name="activity_select_gender_next_button_text_color">#ffffff</color>
 
 
     <!--achievement_activity-->

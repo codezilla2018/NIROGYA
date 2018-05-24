@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--activity_splash_screen.xml-->
-
-    <dimen name="activity_splash_screen_text_view_top_margin">20dp</dimen>
-    <dimen name="activity_splash_screen_text_view_text_size">30dp</dimen>
 
     <!--activity_achievement.xml-->
     <dimen name="activity_achievement_padding">10dp</dimen>
@@ -102,5 +98,30 @@
     <dimen name="activity_profile_weight_selector_sub_topic_margin_top">10dp</dimen>
     <dimen name="activity_profile_weight_selector_unit_margin_left">20dp</dimen>
     <dimen name="activity_profile_weight_selector_bottom_layout_margin_top">10dp</dimen>
+
+    <!--activity_select_gender.xml-->
+    <dimen name="activity_select_gender_padding">10dp</dimen>
+    <dimen name="activity_select_gender_top_child_linear_layout_margin_bottom">100dp</dimen>
+    <dimen name="activity_select_gender_top_child_linear_layout_margin_top">50dp</dimen>
+    <dimen name="activity_select_gender_main_caption_text_text_size">30dp</dimen>
+    <dimen name="activity_select_gender_sub_heading_text_margin_top">10dp</dimen>
+    <dimen name="activity_select_gender_female_icon_width">150dp</dimen>
+    <dimen name="activity_select_gender_female_icon_height">150dp</dimen>
+    <dimen name="activity_select_gender_female_icon_padding">15dp</dimen>
+    <dimen name="activity_select_gender_female_text_margin_top">5dp</dimen>
+    <dimen name="activity_select_gender_male_icon_width">150dp</dimen>
+    <dimen name="activity_select_gender_male_icon_height">150dp</dimen>
+    <dimen name="activity_select_gender_male_icon_padding">15dp</dimen>
+    <dimen name="activity_select_gender_male_text_margin_top">5dp</dimen>
+    <dimen name="activity_select_gender_next_button_height">60dp</dimen>
+    <dimen name="activity_select_gender_next_button_margin_top">-80dp</dimen>
+    <dimen name="activity_select_gender_next_button_text_size">20dp</dimen>
+
+    <!--activity_splash_screen.xml-->
+    <dimen name="activity_splash_screen_text_view_top_margin">20dp</dimen>
+    <dimen name="activity_splash_screen_text_view_text_size">30dp</dimen>
+
+
+
 
 </resources>
